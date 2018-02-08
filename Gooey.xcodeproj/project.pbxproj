@@ -7,9 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		058CF8AF28B252FCC6026FA0 /* Pods_GooeyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFFC3CEDA9892C4E020F7F1 /* Pods_GooeyTests.framework */; };
+		5BE69D986FB88992625B6A5C /* Pods_Gooey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB28889B5C2D7D85C2BD474 /* Pods_Gooey.framework */; };
 		B55BB455202BA1E200B3C865 /* Gooey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55BB44B202BA1E200B3C865 /* Gooey.framework */; };
-		B55BB45A202BA1E200B3C865 /* GooeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55BB459202BA1E200B3C865 /* GooeyTests.swift */; };
 		B55BB45C202BA1E200B3C865 /* Gooey.h in Headers */ = {isa = PBXBuildFile; fileRef = B55BB44E202BA1E200B3C865 /* Gooey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B55BB467202BA27F00B3C865 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55BB466202BA27F00B3C865 /* UIView.swift */; };
+		B55BB469202BA2BF00B3C865 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55BB468202BA2BF00B3C865 /* UITableView.swift */; };
+		B55BB46B202BA30200B3C865 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55BB46A202BA30200B3C865 /* UIViewController.swift */; };
+		B55BB46D202BA33800B3C865 /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55BB46C202BA33800B3C865 /* UINavigationController.swift */; };
+		B55BB471202BA3AE00B3C865 /* Reusability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55BB470202BA3AE00B3C865 /* Reusability.swift */; };
+		B55BB473202BA3C400B3C865 /* GooeyNamespaceProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55BB472202BA3C300B3C865 /* GooeyNamespaceProxy.swift */; };
+		B55BB475202BA3D000B3C865 /* UIView+Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55BB474202BA3D000B3C865 /* UIView+Accessibility.swift */; };
+		B55BB478202BA5A700B3C865 /* UIView+AccessibilitySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55BB477202BA5A700B3C865 /* UIView+AccessibilitySpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +32,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BAFFF7EB8C3A583BC034C55 /* Pods-Gooey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gooey.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gooey/Pods-Gooey.release.xcconfig"; sourceTree = "<group>"; };
+		42CBCF480AC4C902DA3BCD71 /* Pods-GooeyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooeyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GooeyTests/Pods-GooeyTests.release.xcconfig"; sourceTree = "<group>"; };
+		83D18EB0020A1C6C14969DC8 /* Pods-GooeyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooeyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GooeyTests/Pods-GooeyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		87BA032A737F92FB473A1385 /* Pods-Gooey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gooey.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gooey/Pods-Gooey.debug.xcconfig"; sourceTree = "<group>"; };
+		8EB28889B5C2D7D85C2BD474 /* Pods_Gooey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gooey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B55BB44B202BA1E200B3C865 /* Gooey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gooey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B55BB44E202BA1E200B3C865 /* Gooey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Gooey.h; sourceTree = "<group>"; };
 		B55BB44F202BA1E200B3C865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B55BB454202BA1E200B3C865 /* GooeyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GooeyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B55BB459202BA1E200B3C865 /* GooeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooeyTests.swift; sourceTree = "<group>"; };
 		B55BB45B202BA1E200B3C865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B55BB466202BA27F00B3C865 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		B55BB468202BA2BF00B3C865 /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		B55BB46A202BA30200B3C865 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		B55BB46C202BA33800B3C865 /* UINavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
+		B55BB470202BA3AE00B3C865 /* Reusability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusability.swift; sourceTree = "<group>"; };
+		B55BB472202BA3C300B3C865 /* GooeyNamespaceProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooeyNamespaceProxy.swift; sourceTree = "<group>"; };
+		B55BB474202BA3D000B3C865 /* UIView+Accessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Accessibility.swift"; sourceTree = "<group>"; };
+		B55BB477202BA5A700B3C865 /* UIView+AccessibilitySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AccessibilitySpec.swift"; sourceTree = "<group>"; };
+		EAFFC3CEDA9892C4E020F7F1 /* Pods_GooeyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GooeyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BE69D986FB88992625B6A5C /* Pods_Gooey.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +67,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				B55BB455202BA1E200B3C865 /* Gooey.framework in Frameworks */,
+				058CF8AF28B252FCC6026FA0 /* Pods_GooeyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21E9F8ADD4D9E994023F7679 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87BA032A737F92FB473A1385 /* Pods-Gooey.debug.xcconfig */,
+				0BAFFF7EB8C3A583BC034C55 /* Pods-Gooey.release.xcconfig */,
+				83D18EB0020A1C6C14969DC8 /* Pods-GooeyTests.debug.xcconfig */,
+				42CBCF480AC4C902DA3BCD71 /* Pods-GooeyTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B55BB441202BA1E200B3C865 = {
 			isa = PBXGroup;
 			children = (
 				B55BB44D202BA1E200B3C865 /* Gooey */,
 				B55BB458202BA1E200B3C865 /* GooeyTests */,
 				B55BB44C202BA1E200B3C865 /* Products */,
+				21E9F8ADD4D9E994023F7679 /* Pods */,
+				C33F205557A7EC4E95D5A605 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,7 +108,7 @@
 		B55BB44D202BA1E200B3C865 /* Gooey */ = {
 			isa = PBXGroup;
 			children = (
-				B55BB44E202BA1E200B3C865 /* Gooey.h */,
+				B55BB465202BA1EA00B3C865 /* Sources */,
 				B55BB44F202BA1E200B3C865 /* Info.plist */,
 			);
 			path = Gooey;
@@ -80,10 +117,34 @@
 		B55BB458202BA1E200B3C865 /* GooeyTests */ = {
 			isa = PBXGroup;
 			children = (
-				B55BB459202BA1E200B3C865 /* GooeyTests.swift */,
+				B55BB477202BA5A700B3C865 /* UIView+AccessibilitySpec.swift */,
 				B55BB45B202BA1E200B3C865 /* Info.plist */,
 			);
 			path = GooeyTests;
+			sourceTree = "<group>";
+		};
+		B55BB465202BA1EA00B3C865 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B55BB472202BA3C300B3C865 /* GooeyNamespaceProxy.swift */,
+				B55BB470202BA3AE00B3C865 /* Reusability.swift */,
+				B55BB46C202BA33800B3C865 /* UINavigationController.swift */,
+				B55BB468202BA2BF00B3C865 /* UITableView.swift */,
+				B55BB466202BA27F00B3C865 /* UIView.swift */,
+				B55BB474202BA3D000B3C865 /* UIView+Accessibility.swift */,
+				B55BB46A202BA30200B3C865 /* UIViewController.swift */,
+				B55BB44E202BA1E200B3C865 /* Gooey.h */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C33F205557A7EC4E95D5A605 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EB28889B5C2D7D85C2BD474 /* Pods_Gooey.framework */,
+				EAFFC3CEDA9892C4E020F7F1 /* Pods_GooeyTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,10 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B55BB45F202BA1E200B3C865 /* Build configuration list for PBXNativeTarget "Gooey" */;
 			buildPhases = (
+				81F5522DCFF5AE03897687D9 /* [CP] Check Pods Manifest.lock */,
 				B55BB446202BA1E200B3C865 /* Sources */,
 				B55BB447202BA1E200B3C865 /* Frameworks */,
 				B55BB448202BA1E200B3C865 /* Headers */,
 				B55BB449202BA1E200B3C865 /* Resources */,
+				FF995E0C813253A0EB45CBCA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,9 +185,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B55BB462202BA1E200B3C865 /* Build configuration list for PBXNativeTarget "GooeyTests" */;
 			buildPhases = (
+				A8EC49EBF519BAE8887F630A /* [CP] Check Pods Manifest.lock */,
 				B55BB450202BA1E200B3C865 /* Sources */,
 				B55BB451202BA1E200B3C865 /* Frameworks */,
 				B55BB452202BA1E200B3C865 /* Resources */,
+				5458068D566E522E22B16044 /* [CP] Embed Pods Frameworks */,
+				6A353F1DF544F3512BC7F977 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,10 +214,12 @@
 				TargetAttributes = {
 					B55BB44A202BA1E200B3C865 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					B55BB453202BA1E200B3C865 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -191,11 +259,107 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5458068D566E522E22B16044 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GooeyTests/Pods-GooeyTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GooeyTests/Pods-GooeyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A353F1DF544F3512BC7F977 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GooeyTests/Pods-GooeyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81F5522DCFF5AE03897687D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gooey-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8EC49EBF519BAE8887F630A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GooeyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF995E0C813253A0EB45CBCA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gooey/Pods-Gooey-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B55BB446202BA1E200B3C865 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B55BB475202BA3D000B3C865 /* UIView+Accessibility.swift in Sources */,
+				B55BB467202BA27F00B3C865 /* UIView.swift in Sources */,
+				B55BB46B202BA30200B3C865 /* UIViewController.swift in Sources */,
+				B55BB473202BA3C400B3C865 /* GooeyNamespaceProxy.swift in Sources */,
+				B55BB469202BA2BF00B3C865 /* UITableView.swift in Sources */,
+				B55BB471202BA3AE00B3C865 /* Reusability.swift in Sources */,
+				B55BB46D202BA33800B3C865 /* UINavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B55BB45A202BA1E200B3C865 /* GooeyTests.swift in Sources */,
+				B55BB478202BA5A700B3C865 /* UIView+AccessibilitySpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,7 +497,9 @@
 		};
 		B55BB460202BA1E200B3C865 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87BA032A737F92FB473A1385 /* Pods-Gooey.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -342,10 +508,12 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Gooey/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.duet.Gooey;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -353,7 +521,9 @@
 		};
 		B55BB461202BA1E200B3C865 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BAFFF7EB8C3A583BC034C55 /* Pods-Gooey.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -362,6 +532,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Gooey/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.duet.Gooey;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -373,12 +544,17 @@
 		};
 		B55BB463202BA1E200B3C865 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83D18EB0020A1C6C14969DC8 /* Pods-GooeyTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GooeyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.duet.GooeyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -386,12 +562,16 @@
 		};
 		B55BB464202BA1E200B3C865 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42CBCF480AC4C902DA3BCD71 /* Pods-GooeyTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GooeyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.duet.GooeyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
