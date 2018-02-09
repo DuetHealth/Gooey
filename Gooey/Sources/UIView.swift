@@ -85,7 +85,7 @@ public extension EdgeInsets where A == Bounds {
 /// The `BoundingLayoutAnchor` type is a factory decorator for creating grouped `NSLayoutConstraint`
 /// objects using a fluent interface (an interface designed to produce more readable code). Use
 /// these constraints to programatically define your layout using Auto Layout.
-@objc public class BoundingLayoutAnchor: NSObject {
+public struct BoundingLayoutAnchor {
 
     private let target: UIView
 
@@ -98,7 +98,7 @@ public extension EdgeInsets where A == Bounds {
     /// - Parameters:
     ///   - view: The view to which the bound anchors are constrained.
     ///   - insets: The amount of interior space between the argument bound anchors.
-    public func makeVerticalEdges(equalTo view: UIView, insets: EdgeInsets<VerticalAxis>) -> ConstraintGroup<VerticalAxis> {
+    public func makeVerticalEdges(equalTo view: UIView, insets: EdgeInsets<VerticalAxis> = .zero) -> ConstraintGroup<VerticalAxis> {
         return ConstraintGroup(constraints: [
             target.topAnchor.constraint(equalTo: view.topAnchor, constant: insets.top),
             target.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -insets.bottom)
@@ -110,7 +110,7 @@ public extension EdgeInsets where A == Bounds {
     /// - Parameters:
     ///   - view: The view to which the bound anchors are constrained.
     ///   - insets: The amount of interior space between the argument bound anchors.
-    public func makeHorizontalEdges(equalTo view: UIView, insets: EdgeInsets<HorizontalAxis>) -> ConstraintGroup<HorizontalAxis> {
+    public func makeHorizontalEdges(equalTo view: UIView, insets: EdgeInsets<HorizontalAxis> = .zero) -> ConstraintGroup<HorizontalAxis> {
         return ConstraintGroup(constraints: [
             target.leftAnchor.constraint(equalTo: view.leftAnchor, constant: insets.left),
             target.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -insets.right)
@@ -122,7 +122,7 @@ public extension EdgeInsets where A == Bounds {
     /// - Parameters:
     ///   - view: The view to which the bound anchors are constrained.
     ///   - inset: The amount of interior space between the argument bound anchors.
-    public func makeRelativeHorizontalEdges(equalTo view: UIView, insets: EdgeInsets<HorizontalAxis>) -> ConstraintGroup<HorizontalAxis> {
+    public func makeRelativeHorizontalEdges(equalTo view: UIView, insets: EdgeInsets<HorizontalAxis> = .zero) -> ConstraintGroup<HorizontalAxis> {
         return ConstraintGroup(constraints: [
             target.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: insets.left),
             target.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -insets.right),
@@ -134,7 +134,7 @@ public extension EdgeInsets where A == Bounds {
     /// - Parameters:
     ///   - view: The view to which the position anchors are constrained.
     ///   - insets: The surrounding insets applied to the receiving view.
-    public func makeEdges(equalTo view: UIView, insets: EdgeInsets<Bounds>) -> ConstraintGroup<Bounds> {
+    public func makeEdges(equalTo view: UIView, insets: EdgeInsets<Bounds> = .zero) -> ConstraintGroup<Bounds> {
         return ConstraintGroup(constraints: [
             target.topAnchor.constraint(equalTo: view.topAnchor, constant: insets.top),
             target.leftAnchor.constraint(equalTo: view.leftAnchor, constant: insets.left),
@@ -148,7 +148,7 @@ public extension EdgeInsets where A == Bounds {
     /// - Parameters:
     ///   - view: The view to which the position anchors are constrained.
     ///   - insets: The surrounding insets applied to the receiving view.
-    public func makeRelativeEdges(equalTo view: UIView, insets: EdgeInsets<Bounds>) -> ConstraintGroup<Bounds> {
+    public func makeRelativeEdges(equalTo view: UIView, insets: EdgeInsets<Bounds> = .zero) -> ConstraintGroup<Bounds> {
         return ConstraintGroup(constraints: [
             target.topAnchor.constraint(equalTo: view.topAnchor, constant: insets.top),
             target.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: insets.left),
@@ -162,6 +162,7 @@ public extension EdgeInsets where A == Bounds {
     /// - Parameters:
     ///   - view: The view to which the position anchors are constrained.
     ///   - sizeRatio: The ratio of the target anchors to the reference anchors.
+    @available(*, deprecated, message: "center(in:sizeRatio:) will be removed in a future version.")
     public func center(in view: UIView, sizeRatio: CGFloat) -> ConstraintGroup<Bounds> {
         return ConstraintGroup(constraints: [
             target.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -178,6 +179,7 @@ public extension EdgeInsets where A == Bounds {
     ///   - view: The view to which the position anchors are constrained.
     ///   - size: The optional size to apply to the target anchors. If no size is specified, the view
     ///           is free to use its intrinsic content size for layout.
+    @available(*, deprecated, message: "center(in:size:) will be removed in a future version.")
     public func center(in view: UIView, size: CGSize? = nil) -> ConstraintGroup<Bounds> {
         let centerConstraints = [
             target.centerXAnchor.constraint(equalTo: view.centerXAnchor),
