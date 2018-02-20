@@ -14,3 +14,22 @@ public struct GooeyNamespace<Base> {
     }
 
 }
+
+public protocol GooeyCompatible {
+
+    associatedtype CompatibleType
+    var goo: GooeyNamespace<CompatibleType> { get }
+
+}
+
+extension GooeyCompatible {
+
+    public var goo: GooeyNamespace<Self> {
+        get {
+            return GooeyNamespace(base: self)
+        }
+    }
+
+}
+
+extension NSObject: GooeyCompatible {}
