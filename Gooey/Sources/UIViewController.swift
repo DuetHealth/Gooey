@@ -1,13 +1,5 @@
 import UIKit
 
-public extension UIViewController {
-
-    public var goo: GooeyNamespace<UIViewController> {
-        return GooeyNamespace(base: self)
-    }
-    
-}
-
 public extension GooeyNamespace where Base: UIViewController {
 
     /// Returns the top layout anchor for the view controller's view.

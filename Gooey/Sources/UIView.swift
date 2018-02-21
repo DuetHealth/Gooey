@@ -222,14 +222,6 @@ public class ConstraintGroup<A: LayoutAxis> {
 
 }
 
-public extension UIView {
-
-    public var goo: GooeyNamespace<UIView> {
-        return GooeyNamespace(base: self)
-    }
-
-}
-
 public extension GooeyNamespace where Base: UIView {
 
     /// Returns a layout anchor representing the entire bounds of a view.
