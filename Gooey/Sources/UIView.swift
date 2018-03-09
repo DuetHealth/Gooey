@@ -102,7 +102,19 @@ public struct BoundingLayoutAnchor {
         return ConstraintGroup(constraints: [
             target.topAnchor.constraint(equalTo: view.topAnchor, constant: insets.top),
             target.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -insets.bottom)
-            ], insets: insets)
+        ], insets: insets)
+    }
+
+    /// Constrains the top and bottom bound anchors to the reference layout guide using the given insets.
+    ///
+    /// - Parameters:
+    ///   - view: The view to which the bound anchors are constrained.
+    ///   - insets: The amount of interior space between the argument bound anchors.
+    public func makeVerticalEdges(equalTo layoutGuide: UILayoutGuide, insets: EdgeInsets<VerticalAxis> = .zero) -> ConstraintGroup<VerticalAxis> {
+        return ConstraintGroup(constraints: [
+            target.topAnchor.constraint(equalTo: layoutGuide.topAnchor, constant: insets.top),
+            target.bottomAnchor.constraint(equalTo: layoutGuide.bottomAnchor, constant: -insets.bottom)
+        ], insets: insets)
     }
 
     /// Constrains the left and right bound anchors to the reference view using the given insets.
@@ -114,7 +126,19 @@ public struct BoundingLayoutAnchor {
         return ConstraintGroup(constraints: [
             target.leftAnchor.constraint(equalTo: view.leftAnchor, constant: insets.left),
             target.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -insets.right)
-            ], insets: insets)
+        ], insets: insets)
+    }
+
+    /// Constrains the left and right bound anchors to the reference layout guide using the given insets.
+    ///
+    /// - Parameters:
+    ///   - view: The view to which the bound anchors are constrained.
+    ///   - insets: The amount of interior space between the argument bound anchors.
+    public func makeHorizontalEdges(equalTo layoutGuide: UILayoutGuide, insets: EdgeInsets<HorizontalAxis> = .zero) -> ConstraintGroup<HorizontalAxis> {
+        return ConstraintGroup(constraints: [
+            target.leftAnchor.constraint(equalTo: layoutGuide.leftAnchor, constant: insets.left),
+            target.rightAnchor.constraint(equalTo: layoutGuide.rightAnchor, constant: -insets.right)
+        ], insets: insets)
     }
 
     /// Constrains the leading and trailing bound anchors to the reference view using the given insets.
@@ -126,7 +150,19 @@ public struct BoundingLayoutAnchor {
         return ConstraintGroup(constraints: [
             target.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: insets.left),
             target.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -insets.right),
-            ], insets: insets)
+        ], insets: insets)
+    }
+
+    /// Constrains the leading and trailing bound anchors to the reference layout guide using the given insets.
+    ///
+    /// - Parameters:
+    ///   - view: The view to which the bound anchors are constrained.
+    ///   - inset: The amount of interior space between the argument bound anchors.
+    public func makeRelativeHorizontalEdges(equalTo layoutGuide: UILayoutGuide, insets: EdgeInsets<HorizontalAxis> = .zero) -> ConstraintGroup<HorizontalAxis> {
+        return ConstraintGroup(constraints: [
+            target.leadingAnchor.constraint(equalTo: layoutGuide.leadingAnchor, constant: insets.left),
+            target.trailingAnchor.constraint(equalTo: layoutGuide.trailingAnchor, constant: -insets.right),
+        ], insets: insets)
     }
 
     /// Constrains all bound anchors to the reference view using the given insets.
@@ -143,6 +179,20 @@ public struct BoundingLayoutAnchor {
             ], insets: insets)
     }
 
+    /// Constrains all bound anchors to the reference layout guide using the given insets.
+    ///
+    /// - Parameters:
+    ///   - view: The view to which the position anchors are constrained.
+    ///   - insets: The surrounding insets applied to the receiving view.
+    public func makeEdges(equalTo layoutGuide: UILayoutGuide, insets: EdgeInsets<Bounds> = .zero) -> ConstraintGroup<Bounds> {
+        return ConstraintGroup(constraints: [
+            target.topAnchor.constraint(equalTo: layoutGuide.topAnchor, constant: insets.top),
+            target.leftAnchor.constraint(equalTo: layoutGuide.leftAnchor, constant: insets.left),
+            target.bottomAnchor.constraint(equalTo: layoutGuide.bottomAnchor, constant: -insets.bottom),
+            target.rightAnchor.constraint(equalTo: layoutGuide.rightAnchor, constant: -insets.right)
+        ], insets: insets)
+    }
+
     /// Constrains all bound anchors to the reference view's relative anchors using the given insets.
     ///
     /// - Parameters:
@@ -154,7 +204,21 @@ public struct BoundingLayoutAnchor {
             target.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: insets.left),
             target.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -insets.bottom),
             target.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -insets.right)
-            ], insets: insets)
+        ], insets: insets)
+    }
+
+    /// Constrains all bound anchors to the reference view's relative anchors using the given insets.
+    ///
+    /// - Parameters:
+    ///   - view: The view to which the position anchors are constrained.
+    ///   - insets: The surrounding insets applied to the receiving view.
+    public func makeRelativeEdges(equalTo layoutGuide: UILayoutGuide, insets: EdgeInsets<Bounds> = .zero) -> ConstraintGroup<Bounds> {
+        return ConstraintGroup(constraints: [
+            target.topAnchor.constraint(equalTo: layoutGuide.topAnchor, constant: insets.top),
+            target.leadingAnchor.constraint(equalTo: layoutGuide.leadingAnchor, constant: insets.left),
+            target.bottomAnchor.constraint(equalTo: layoutGuide.bottomAnchor, constant: -insets.bottom),
+            target.trailingAnchor.constraint(equalTo: layoutGuide.trailingAnchor, constant: -insets.right)
+        ], insets: insets)
     }
 
     /// Constrains the position and dimension anchors to the reference view using a proportional relationship.
@@ -169,7 +233,7 @@ public struct BoundingLayoutAnchor {
             target.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             target.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: sizeRatio),
             target.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: sizeRatio)
-            ], insets: EdgeInsets<Bounds>.zero)
+        ], insets: EdgeInsets<Bounds>.zero)
     }
 
     /// Constrains the position to the reference view and optionally constrains the dimension anchors
@@ -190,7 +254,7 @@ public struct BoundingLayoutAnchor {
         case .some(let some): sizeConstraints = [
             target.widthAnchor.constraint(equalToConstant: some.width),
             target.heightAnchor.constraint(equalToConstant: some.height)
-            ]
+        ]
         case .none: sizeConstraints = []
         }
         return ConstraintGroup(constraints: centerConstraints + sizeConstraints, insets: EdgeInsets<Bounds>.zero)
