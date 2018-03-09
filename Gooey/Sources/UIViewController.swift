@@ -56,10 +56,6 @@ public extension GooeyNamespace where Base: UIViewController {
         return base.view.safeAreaLayoutGuide.trailingAnchor
     }
 
-    public var safeAreaInsets: UILayoutGuide {
-        return self.safeAreaInsets
-    }
-
     /// Returns the safe-area layout guide for the target view controller.
     public var safeArea: UILayoutGuide {
         return SafeAreaLayoutGuide(base)
