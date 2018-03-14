@@ -20,6 +20,15 @@ public extension GooeyNamespace where Base: UIViewController {
         return base.view.safeAreaLayoutGuide.bottomAnchor
     }
 
+    /// Returns the bottom-most anchor for visible content.
+    ///
+    /// On the iPhone X, this anchor falls behind the virtual home button for view controllers with
+    // bounds equal the window's bounds.
+    var bottomBleedAnchor: NSLayoutYAxisAnchor {
+        guard !DeviceCheck.isModelX else { return base.view.bottomAnchor }
+        return bottomAnchor
+    }
+
     /// Returns the left layout anchor for the view controller's view.
     ///
     /// On iOS 11 and above, this returns the `safeAreaLayoutGuide`'s left anchor; on older versions,
@@ -58,7 +67,28 @@ public extension GooeyNamespace where Base: UIViewController {
 
     /// Returns the safe-area layout guide for the target view controller.
     public var safeArea: UILayoutGuide {
-        return SafeAreaLayoutGuide(base)
+        return SafeAreaLayoutGuide(base, useBleed: false)
     }
 
+    /// Returns the safe-area layout guide for the target view controller including its bleed anchor.
+    public var bleedArea: UILayoutGuide {
+        return SafeAreaLayoutGuide(base, useBleed: true)
+    }
+
+}
+
+fileprivate struct DeviceCheck {
+    static let isModelX: Bool = {
+        let deviceName: String
+        #if (arch(i386) || arch(x86_64))
+            deviceName = ProcessInfo.processInfo.environment["SIMULATOR_MODEL_IDENTIFIER"] as! String
+        #else
+            var systemInfo = utsname()
+            uname(&systemInfo)
+            deviceName = NSString(cString: &systemInfo.machine.0, encoding: String.Encoding.utf8.rawValue).map(String.init) ?? ""
+        #endif
+        return deviceName == "iPhone10,3" || deviceName == "iPhone10,6"
+    }()
+
+    private init() { }
 }

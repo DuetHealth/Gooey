@@ -7,9 +7,11 @@ import UIKit
 open class SafeAreaLayoutGuide: UILayoutGuide {
 
     private let target: UIViewController
+    private let useBleed: Bool
 
-    internal init(_ viewController: UIViewController) {
+    internal init(_ viewController: UIViewController, useBleed: Bool) {
         target = viewController
+        self.useBleed = useBleed
         super.init()
     }
 
@@ -26,7 +28,7 @@ open class SafeAreaLayoutGuide: UILayoutGuide {
     }
 
     open override var bottomAnchor: NSLayoutYAxisAnchor {
-        return target.goo.bottomAnchor
+        return useBleed ? target.goo.bottomBleedAnchor : target.goo.bottomAnchor
     }
 
     open override var rightAnchor: NSLayoutXAxisAnchor {
