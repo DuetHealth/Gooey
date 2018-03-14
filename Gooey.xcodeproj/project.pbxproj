@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		058CF8AF28B252FCC6026FA0 /* Pods_GooeyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFFC3CEDA9892C4E020F7F1 /* Pods_GooeyTests.framework */; };
 		5BE69D986FB88992625B6A5C /* Pods_Gooey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB28889B5C2D7D85C2BD474 /* Pods_Gooey.framework */; };
+		94F30F9F20530A060073B904 /* SafeAreaLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F30F9E20530A060073B904 /* SafeAreaLayoutGuide.swift */; };
 		B55BB455202BA1E200B3C865 /* Gooey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55BB44B202BA1E200B3C865 /* Gooey.framework */; };
 		B55BB45C202BA1E200B3C865 /* Gooey.h in Headers */ = {isa = PBXBuildFile; fileRef = B55BB44E202BA1E200B3C865 /* Gooey.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B55BB467202BA27F00B3C865 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55BB466202BA27F00B3C865 /* UIView.swift */; };
@@ -37,6 +38,7 @@
 		83D18EB0020A1C6C14969DC8 /* Pods-GooeyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooeyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GooeyTests/Pods-GooeyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		87BA032A737F92FB473A1385 /* Pods-Gooey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gooey.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gooey/Pods-Gooey.debug.xcconfig"; sourceTree = "<group>"; };
 		8EB28889B5C2D7D85C2BD474 /* Pods_Gooey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gooey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94F30F9E20530A060073B904 /* SafeAreaLayoutGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAreaLayoutGuide.swift; sourceTree = "<group>"; };
 		B55BB44B202BA1E200B3C865 /* Gooey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gooey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B55BB44E202BA1E200B3C865 /* Gooey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Gooey.h; sourceTree = "<group>"; };
 		B55BB44F202BA1E200B3C865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				B55BB474202BA3D000B3C865 /* UIView+Accessibility.swift */,
 				B55BB46A202BA30200B3C865 /* UIViewController.swift */,
 				B55BB44E202BA1E200B3C865 /* Gooey.h */,
+				94F30F9E20530A060073B904 /* SafeAreaLayoutGuide.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94F30F9F20530A060073B904 /* SafeAreaLayoutGuide.swift in Sources */,
 				B55BB475202BA3D000B3C865 /* UIView+Accessibility.swift in Sources */,
 				B55BB467202BA27F00B3C865 /* UIView.swift in Sources */,
 				B55BB46B202BA30200B3C865 /* UIViewController.swift in Sources */,
