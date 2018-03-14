@@ -23,7 +23,7 @@ public extension GooeyNamespace where Base: UIViewController {
     /// Returns the bottom-most anchor for visible content.
     ///
     /// On the iPhone X, this anchor falls behind the virtual home button for view controllers with
-    // bounds equal the window's bounds.
+    /// bounds equal the window's bounds.
     var bottomBleedAnchor: NSLayoutYAxisAnchor {
         guard !DeviceCheck.isModelX else { return base.view.bottomAnchor }
         return bottomAnchor
