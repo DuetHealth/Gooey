@@ -81,7 +81,7 @@ fileprivate struct DeviceCheck {
     static let isModelX: Bool = {
         let deviceName: String
         #if (arch(i386) || arch(x86_64))
-            deviceName = ProcessInfo.processInfo.environment["SIMULATOR_MODEL_IDENTIFIER"] as String!
+            deviceName = ProcessInfo.processInfo.environment["SIMULATOR_MODEL_IDENTIFIER"] as! String
         #else
             var systemInfo = utsname()
             uname(&systemInfo)
