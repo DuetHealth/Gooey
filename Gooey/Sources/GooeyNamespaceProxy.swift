@@ -24,12 +24,14 @@ public protocol GooeyCompatible {
 
 extension GooeyCompatible {
 
+    public static var goo: GooeyNamespace<Self.Type> {
+        return GooeyNamespace(base: Self.self)
+    }
+
     public var goo: GooeyNamespace<Self> {
-        get {
-            return GooeyNamespace(base: self)
-        }
+        return GooeyNamespace(base: self)
     }
 
 }
 
-extension NSObject: GooeyCompatible {}
+extension NSObject: GooeyCompatible { }
