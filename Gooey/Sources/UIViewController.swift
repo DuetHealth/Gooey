@@ -75,13 +75,46 @@ public extension GooeyNamespace where Base: UIViewController {
         return SafeAreaLayoutGuide(base, useBleed: true)
     }
 
+    /// Installs into the calling view controller the search bar of a `UISearchController`.
+    ///
+    /// On iOS 11 and above, the search bar is added to the navigation item. On iOS 10 and below,
+    /// it is added as the fallback table view's header view.
+    ///
+    /// - Parameters:
+    ///   - controller: the target search controller to install.
+    ///   - view: the table view to receive the search bar
+    /// - Returns: the search bar belonging to the search controller for convenience. You can, of
+    ///   course, access this via the search controller's property.
+    public func installSearchController(_ controller: UISearchController, using tableView: UITableView) -> UISearchBar {
+        base.definesPresentationContext = false
+
+        if #available(iOS 9.1, *) {
+            controller.obscuresBackgroundDuringPresentation = false
+        } else {
+            controller.dimsBackgroundDuringPresentation = false
+        }
+
+        if #available(iOS 11.0, *) {
+            base.navigationItem.searchController = controller
+            base.navigationItem.hidesSearchBarWhenScrolling = false
+        } else {
+            tableView.tableHeaderView = controller.searchBar
+            tableView.tableHeaderView?.frame = CGRect(x: 0, y: 0, width: 320, height: 44)
+            controller.searchBar.sizeToFit()
+            controller.searchBar.heightAnchor.constraint(equalToConstant: 44).isActive = true
+            controller.hidesNavigationBarDuringPresentation = false
+        }
+
+        return controller.searchBar
+    }
+
 }
 
 fileprivate struct DeviceCheck {
     static let isModelX: Bool = {
         let deviceName: String
         #if (arch(i386) || arch(x86_64))
-            deviceName = ProcessInfo.processInfo.environment["SIMULATOR_MODEL_IDENTIFIER"] as! String
+            deviceName = ProcessInfo.processInfo.environment["SIMULATOR_MODEL_IDENTIFIER"]!
         #else
             var systemInfo = utsname()
             uname(&systemInfo)
