@@ -38,5 +38,13 @@ public extension GooeyNamespace where Base: UITableView {
         }
     }
 
+    /// Returns the last numerical row in the table view's section or nil if no rows exist in that section.
+    ///
+    /// - Parameter section: the numerical section in the table view.
+    /// - Returns: the last numerical row in the table view's section or nil
+    public func lastRow(inSection section: Int) -> Int? {
+        return base.numberOfRows(inSection: section) > 0 ? base.numberOfRows(inSection: section) - 1 : nil
+    }
+
 }
 
