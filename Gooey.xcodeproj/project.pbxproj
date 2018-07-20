@@ -11,6 +11,7 @@
 		5BE69D986FB88992625B6A5C /* Pods_Gooey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB28889B5C2D7D85C2BD474 /* Pods_Gooey.framework */; };
 		9438F26320A5BED300054664 /* UIControlEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9438F26220A5BED300054664 /* UIControlEvents.swift */; };
 		94398129206ADFC8002AD1CA /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94398128206ADFC8002AD1CA /* Color.swift */; };
+		94B6AF8820F79FDE00E185FC /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6AF8720F79FDE00E185FC /* UIStackView.swift */; };
 		94F30F9F20530A060073B904 /* SafeAreaLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F30F9E20530A060073B904 /* SafeAreaLayoutGuide.swift */; };
 		94F30FA820598CC30073B904 /* BoundingAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F30FA720598CC30073B904 /* BoundingAnchor.swift */; };
 		94F30FAA20598CCD0073B904 /* ConstraintGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F30FA920598CCD0073B904 /* ConstraintGroup.swift */; };
@@ -45,6 +46,7 @@
 		8EB28889B5C2D7D85C2BD474 /* Pods_Gooey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gooey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9438F26220A5BED300054664 /* UIControlEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIControlEvents.swift; sourceTree = "<group>"; };
 		94398128206ADFC8002AD1CA /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		94B6AF8720F79FDE00E185FC /* UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
 		94F30F9E20530A060073B904 /* SafeAreaLayoutGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAreaLayoutGuide.swift; sourceTree = "<group>"; };
 		94F30FA720598CC30073B904 /* BoundingAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundingAnchor.swift; sourceTree = "<group>"; };
 		94F30FA920598CCD0073B904 /* ConstraintGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintGroup.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				94F30F9E20530A060073B904 /* SafeAreaLayoutGuide.swift */,
 				9438F26220A5BED300054664 /* UIControlEvents.swift */,
 				B55BB46C202BA33800B3C865 /* UINavigationController.swift */,
+				94B6AF8720F79FDE00E185FC /* UIStackView.swift */,
 				B55BB468202BA2BF00B3C865 /* UITableView.swift */,
 				B55BB466202BA27F00B3C865 /* UIView.swift */,
 				B55BB474202BA3D000B3C865 /* UIView+Accessibility.swift */,
@@ -388,6 +391,7 @@
 				94398129206ADFC8002AD1CA /* Color.swift in Sources */,
 				B55BB46B202BA30200B3C865 /* UIViewController.swift in Sources */,
 				B55BB473202BA3C400B3C865 /* GooeyNamespaceProxy.swift in Sources */,
+				94B6AF8820F79FDE00E185FC /* UIStackView.swift in Sources */,
 				B55BB469202BA2BF00B3C865 /* UITableView.swift in Sources */,
 				B55BB471202BA3AE00B3C865 /* Reusability.swift in Sources */,
 				94F30FA820598CC30073B904 /* BoundingAnchor.swift in Sources */,
