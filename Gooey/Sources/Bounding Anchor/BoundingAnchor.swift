@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 /// The `LayoutAxis` protocol acts as a phantom parameterization for `BoundingAnchor` functions.
 public protocol LayoutAxis { }
@@ -12,15 +13,26 @@ public enum VerticalAxis: LayoutAxis { }
 /// A `LayoutAxis` parameterization encompassing both axes of the target.
 public enum Bounds: LayoutAxis { }
 
+/// Classes which conform to the `BoundingLayoutAnchorTarget` protocol provide an interface
+/// for accessing the edge anchors which drive the layout of the target.
+public protocol BoundingLayoutAnchorTarget {
+    var topAnchor: NSLayoutYAxisAnchor { get }
+    var leftAnchor: NSLayoutXAxisAnchor { get }
+    var bottomAnchor: NSLayoutYAxisAnchor { get }
+    var rightAnchor: NSLayoutXAxisAnchor { get }
+    var leadingAnchor: NSLayoutXAxisAnchor { get }
+    var trailingAnchor: NSLayoutXAxisAnchor { get }
+}
+
 /// The `BoundingLayoutAnchor` type is a factory decorator for creating grouped `NSLayoutConstraint`
 /// objects using a fluent interface (an interface designed to produce more readable code). Use
 /// these constraints to programatically define your layout using Auto Layout.
 public struct BoundingLayoutAnchor {
 
-    private let target: UIView
+    private let target: BoundingLayoutAnchorTarget
 
-    init(targeting view: UIView) {
-        target = view
+    init(targeting target: BoundingLayoutAnchorTarget) {
+        self.target = target
     }
 
     /// Constrains the top and bottom bound anchors to the reference view using the given insets.
