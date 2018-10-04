@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 /// Encapsulates custom behaviors on types with a "proxy namespace" struct to avoid name conflicts.
 /// Any definitions are called similar to
