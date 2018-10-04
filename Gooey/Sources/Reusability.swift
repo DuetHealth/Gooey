@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 @inline(__always) fileprivate func fullyQualifiedName(of type: AnyClass) -> String {
     let bundle = Bundle(for: type).bundleIdentifier ?? Bundle.main.bundleIdentifier!

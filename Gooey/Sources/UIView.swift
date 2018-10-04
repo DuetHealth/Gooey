@@ -1,4 +1,7 @@
 import Foundation
+import UIKit
+
+extension UIView: BoundingLayoutAnchorTarget { }
 
 public extension GooeyNamespace where Base: UIView {
 

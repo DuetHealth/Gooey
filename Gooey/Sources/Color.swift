@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 /// Provides a unified convenience API for colors with a focus on brevity.
 public struct Color {
