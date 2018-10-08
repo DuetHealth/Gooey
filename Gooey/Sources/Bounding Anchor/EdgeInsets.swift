@@ -1,12 +1,5 @@
-//
-//  EdgeInsets.swift
-//  Gooey
-//
-//  Created by Ryan Wachowski on 3/14/18.
-//  Copyright © 2018 Duet Health. All rights reserved.
-//
-
 import Foundation
+import UIKit
 
 /// An inset value parameterized by its affected axes.
 public struct EdgeInsets<A: LayoutAxis> {

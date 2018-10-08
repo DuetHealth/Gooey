@@ -1,11 +1,3 @@
-//
-//  NSLayoutAnchor.swift
-//  Gooey
-//
-//  Created by ライアン on 10/4/18.
-//  Copyright © 2018 Duet Health. All rights reserved.
-//
-
 import Foundation
 import UIKit
 
