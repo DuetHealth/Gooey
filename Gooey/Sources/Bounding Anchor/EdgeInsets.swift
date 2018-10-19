@@ -19,6 +19,18 @@ public struct EdgeInsets<A: LayoutAxis> {
 
 public extension EdgeInsets where A == HorizontalAxis {
 
+    public static var systemSpacing: EdgeInsets<A> {
+        return EdgeInsets<A>.both(CGFloat.goo.systemSpacing)
+    }
+    
+    public static func systemMultiple(_ multiplier: CGFloat) -> EdgeInsets<A> {
+        return EdgeInsets<A>.both(CGFloat.goo.systemSpacing * multiplier)
+    }
+    
+    public static func systemMultiples(left: CGFloat, right: CGFloat) -> EdgeInsets<A> {
+        return EdgeInsets<A>.at(left: left * CGFloat.goo.systemSpacing, right: right * CGFloat.goo.systemSpacing)
+    }
+    
     public static func both(_ value: CGFloat) -> EdgeInsets<HorizontalAxis> {
         return self.init(uiInsets: UIEdgeInsets(top: 0, left: value, bottom: 0, right: value))
     }
@@ -39,6 +51,18 @@ public extension EdgeInsets where A == HorizontalAxis {
 
 public extension EdgeInsets where A == VerticalAxis {
 
+    public static var systemSpacing: EdgeInsets<A> {
+        return EdgeInsets<A>.both(CGFloat.goo.systemSpacing)
+    }
+    
+    public static func systemMultiple(_ multiplier: CGFloat) -> EdgeInsets<A> {
+        return EdgeInsets<A>.both(CGFloat.goo.systemSpacing * multiplier)
+    }
+    
+    public static func systemMultiples(top: CGFloat, bottom: CGFloat) -> EdgeInsets<A> {
+        return EdgeInsets<A>.at(top: top * CGFloat.goo.systemSpacing, bottom: bottom * CGFloat.goo.systemSpacing)
+    }
+    
     public static func both(_ value: CGFloat) -> EdgeInsets<VerticalAxis> {
         return self.init(uiInsets: UIEdgeInsets(top: value, left: 0, bottom: value, right: 0))
     }
@@ -58,7 +82,19 @@ public extension EdgeInsets where A == VerticalAxis {
 }
 
 public extension EdgeInsets where A == Bounds {
-
+    
+    public static var systemSpacing: EdgeInsets<A> {
+        return EdgeInsets<A>.all(CGFloat.goo.systemSpacing)
+    }
+    
+    public static func systemMultiple(_ multiplier: CGFloat) -> EdgeInsets<A> {
+        return EdgeInsets<A>.all(CGFloat.goo.systemSpacing * multiplier)
+    }
+    
+    public static func systemMultiples(top: CGFloat, left: CGFloat, bottom: CGFloat, right: CGFloat) -> EdgeInsets<A> {
+        return EdgeInsets<A>.at(top: top * CGFloat.goo.systemSpacing, left: left * CGFloat.goo.systemSpacing, bottom: bottom * CGFloat.goo.systemSpacing, right: right * CGFloat.goo.systemSpacing)
+    }
+    
     public static func all(_ value: CGFloat) -> EdgeInsets<Bounds> {
         return self.init(uiInsets: UIEdgeInsets(top: value, left: value, bottom: value, right: value))
     }
