@@ -33,5 +33,22 @@ public extension GooeyNamespace where Base: UINavigationController {
         coordinator.animate(alongsideTransition: nil) { _ in completion() }
         return controller
     }
+    
+    /// Pops to the root view controller of the receiver’s stack and updates the display, calling the given
+    /// completion block once the animation finishes.
+    ///
+    /// - Parameters:
+    ///   - animated: Specify true to animate the transition or false if you do not want the
+    ///               transition to be animated.
+    ///   - completion: a closure that is invoked after the transition animation has completed.
+    @discardableResult func popToRootViewController(animated: Bool, completion: @escaping () -> ()) -> [UIViewController]? {
+        let controllers = base.popToRootViewController(animated: animated)
+        guard animated, let coordinator = base.transitionCoordinator else {
+            completion()
+            return controllers
+        }
+        coordinator.animate(alongsideTransition: nil) { _ in completion() }
+        return controllers
+    }
 
 }
