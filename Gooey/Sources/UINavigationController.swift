@@ -34,7 +34,7 @@ public extension GooeyNamespace where Base: UINavigationController {
         return controller
     }
     
-    /// Pops to the root view controller odf the receiver’s stack and updates the display, calling the given
+    /// Pops to the root view controller of the receiver’s stack and updates the display, calling the given
     /// completion block once the animation finishes.
     ///
     /// - Parameters:
