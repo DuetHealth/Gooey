@@ -6,9 +6,9 @@ Gooey is a utility library which provides useful extensions to UIKit. The functi
 
 ### Installation
 
-Cocoapods: `pod 'Gooey', '~> 1.0'`. See [Gooey.podspec](Gooey.podspec) for more information.
+Cocoapods: `pod 'Gooey', '~> 2.0'`. See [Gooey.podspec](Gooey.podspec) for more information.
 
-Carthage: `github "DuetHealth/Gooey" ~> 1.0 && carthage update`
+Carthage: `github "DuetHealth/Gooey" ~> 2.0 && carthage update`
 
 ### Running tests
 
