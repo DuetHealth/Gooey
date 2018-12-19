@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		058CF8AF28B252FCC6026FA0 /* Pods_GooeyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFFC3CEDA9892C4E020F7F1 /* Pods_GooeyTests.framework */; };
 		5BE69D986FB88992625B6A5C /* Pods_Gooey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB28889B5C2D7D85C2BD474 /* Pods_Gooey.framework */; };
+		9410F9B42163A47200D04DC2 /* UILayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9410F9B32163A47200D04DC2 /* UILayoutGuide.swift */; };
 		941D3A5721665FC80044DC5F /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941D3A5621665FC80044DC5F /* CGFloat.swift */; };
 		941D3A59216661310044DC5F /* NSLayoutAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941D3A58216661310044DC5F /* NSLayoutAnchor.swift */; };
 		941D3A5B216663870044DC5F /* UIEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941D3A5A216663870044DC5F /* UIEdgeInsets.swift */; };
-		9410F9B42163A47200D04DC2 /* UILayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9410F9B32163A47200D04DC2 /* UILayoutGuide.swift */; };
 		9438F26320A5BED300054664 /* UIControlEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9438F26220A5BED300054664 /* UIControlEvents.swift */; };
 		94398129206ADFC8002AD1CA /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94398128206ADFC8002AD1CA /* Color.swift */; };
 		94B6AF8820F79FDE00E185FC /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6AF8720F79FDE00E185FC /* UIStackView.swift */; };
@@ -48,10 +48,10 @@
 		83D18EB0020A1C6C14969DC8 /* Pods-GooeyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooeyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GooeyTests/Pods-GooeyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		87BA032A737F92FB473A1385 /* Pods-Gooey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gooey.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gooey/Pods-Gooey.debug.xcconfig"; sourceTree = "<group>"; };
 		8EB28889B5C2D7D85C2BD474 /* Pods_Gooey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gooey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9410F9B32163A47200D04DC2 /* UILayoutGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILayoutGuide.swift; sourceTree = "<group>"; };
 		941D3A5621665FC80044DC5F /* CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
 		941D3A58216661310044DC5F /* NSLayoutAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutAnchor.swift; sourceTree = "<group>"; };
 		941D3A5A216663870044DC5F /* UIEdgeInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEdgeInsets.swift; sourceTree = "<group>"; };
-		9410F9B32163A47200D04DC2 /* UILayoutGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILayoutGuide.swift; sourceTree = "<group>"; };
 		9438F26220A5BED300054664 /* UIControlEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIControlEvents.swift; sourceTree = "<group>"; };
 		94398128206ADFC8002AD1CA /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		94B6AF8720F79FDE00E185FC /* UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
@@ -167,7 +167,6 @@
 				B55BB470202BA3AE00B3C865 /* Reusability.swift */,
 				94F30F9E20530A060073B904 /* SafeAreaLayoutGuide.swift */,
 				9438F26220A5BED300054664 /* UIControlEvents.swift */,
-				9410F9B52163A58800D04DC2 /* UIEdgeInsets.swift */,
 				9410F9B32163A47200D04DC2 /* UILayoutGuide.swift */,
 				B55BB46C202BA33800B3C865 /* UINavigationController.swift */,
 				94B6AF8720F79FDE00E185FC /* UIStackView.swift */,
@@ -212,7 +211,6 @@
 				B55BB447202BA1E200B3C865 /* Frameworks */,
 				B55BB448202BA1E200B3C865 /* Headers */,
 				B55BB449202BA1E200B3C865 /* Resources */,
-				FF995E0C813253A0EB45CBCA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,7 +230,6 @@
 				B55BB451202BA1E200B3C865 /* Frameworks */,
 				B55BB452202BA1E200B3C865 /* Resources */,
 				5458068D566E522E22B16044 /* [CP] Embed Pods Frameworks */,
-				6A353F1DF544F3512BC7F977 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -308,7 +305,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-GooeyTests/Pods-GooeyTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-GooeyTests/Pods-GooeyTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
@@ -319,22 +316,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GooeyTests/Pods-GooeyTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6A353F1DF544F3512BC7F977 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GooeyTests/Pods-GooeyTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GooeyTests/Pods-GooeyTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		81F5522DCFF5AE03897687D9 /* [CP] Check Pods Manifest.lock */ = {
@@ -373,21 +355,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FF995E0C813253A0EB45CBCA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gooey/Pods-Gooey-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -402,7 +369,6 @@
 				B55BB475202BA3D000B3C865 /* UIView+Accessibility.swift in Sources */,
 				94F30FAC20598D8A0073B904 /* EdgeInsets.swift in Sources */,
 				B55BB467202BA27F00B3C865 /* UIView.swift in Sources */,
-				9410F9B62163A58800D04DC2 /* UIEdgeInsets.swift in Sources */,
 				9438F26320A5BED300054664 /* UIControlEvents.swift in Sources */,
 				94398129206ADFC8002AD1CA /* Color.swift in Sources */,
 				B55BB46B202BA30200B3C865 /* UIViewController.swift in Sources */,
