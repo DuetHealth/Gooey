@@ -1,11 +1,11 @@
 language: objective-c  #1
-osx_image: xcode9.2 #2
+osx_image: xcode10.1 #2
 xcode_workspace: Gooey.xcworkspace #3
 xcode_scheme: Gooey #4
-xcode_sdk: iphonesimulator11.2
+xcode_sdk: iphonesimulator12.1
 
 before_install:
-  - gem install cocoapods -v '1.4.0'
+  - gem install cocoapods -v '1.6.0.beta.2'
 
 install:
   - pod repo update
@@ -13,5 +13,5 @@ install:
 
 script: 
   - xcodebuild -workspace Gooey.xcworkspace -scheme Gooey -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
-  - xcodebuild test -workspace Gooey.xcworkspace -scheme Gooey -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.0' -sdk iphonesimulator
+  - xcodebuild test -workspace Gooey.xcworkspace -scheme Gooey -destination 'platform=iOS Simulator,name=iPhone 6,OS=12.1' -sdk iphonesimulator
 
