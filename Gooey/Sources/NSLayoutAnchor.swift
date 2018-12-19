@@ -6,7 +6,7 @@ public extension GooeyNamespace where Base: NSLayoutXAxisAnchor {
     
     /// Returns a constraint which defines that the current anchor trails the specified anchor by the system spacing value.
     public func constraintEqualToSystemSpacingAfter(_ anchor: NSLayoutXAxisAnchor) -> NSLayoutConstraint {
-        return base.constraintEqualToSystemSpacingAfter(anchor, multiplier: 1)
+        return base.constraint(equalToSystemSpacingAfter: anchor, multiplier: 1)
     }
     
     /// Returns a constraint that defines by how much the current anchor leads the specified anchor.
@@ -33,7 +33,7 @@ public extension GooeyNamespace where Base: NSLayoutYAxisAnchor {
     
     /// Returns a constraint which defines that the current anchor is positioned below the specified anchor by the system spacing value.
     public func constraintEqualToSystemSpacingBelow(_ anchor: NSLayoutYAxisAnchor) -> NSLayoutConstraint {
-        return base.constraintEqualToSystemSpacingBelow(anchor, multiplier: 1)
+        return base.constraint(equalToSystemSpacingBelow: anchor, multiplier: 1)
     }
     
     /// Returns a constraint that defines by how much the current anchor is positioned the specified anchor by the system spacing value.
