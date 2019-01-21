@@ -1,17 +1,16 @@
 language: objective-c  #1
 osx_image: xcode10.1 #2
-xcode_workspace: Gooey.xcworkspace #3
+xcode_project: Gooey.xcodeproj #3
 xcode_scheme: Gooey #4
 xcode_sdk: iphonesimulator12.1
 
 before_install:
-  - gem install cocoapods -v '1.6.0.beta.2'
+  - brew install carthage
 
 install:
-  - pod repo update
-  - pod install
+  - carthage update --platform iOS
 
 script: 
-  - xcodebuild -workspace Gooey.xcworkspace -scheme Gooey -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
-  - xcodebuild test -workspace Gooey.xcworkspace -scheme Gooey -destination 'platform=iOS Simulator,name=iPhone 6,OS=12.1' -sdk iphonesimulator
+  - xcodebuild -project Gooey.xcodeproj -scheme Gooey -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
+  - xcodebuild test -project Gooey.xcodeproj -scheme Gooey -destination 'platform=iOS Simulator,name=iPhone 6,OS=12.1' -sdk iphonesimulator
 

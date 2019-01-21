@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/DuetHealth/Gooey.svg?branch=master)](https://travis-ci.org/DuetHealth/Gooey)
+
 # Gooey
 
 Gooey is a utility library which provides useful extensions to UIKit. The functionality includes helper methods for working with programmatic AutoLayout constraints, reusable views, and more, with the majority of the focus on adding type safety and leveraging Swift's features into making UIKit more pleasant to work with.

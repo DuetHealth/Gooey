@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = 'Gooey'
-  s.version               = '2.0.0'
+  s.version               = '2.0.1'
   s.summary               = 'UIKit extensions and helpers to make everyday iOS development simpler.'
   s.description           = "UIKit extensions for simplifying development. Includes extensions for handling safeAreaLayoutGuide with backwards compatibility, less verbose reusable views, and more."
   s.license               = { type: 'MIT', file: 'LICENSE' }
