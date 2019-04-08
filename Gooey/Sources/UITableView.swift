@@ -6,7 +6,7 @@ public extension GooeyNamespace where Base: UITableView {
     /// Creates a `UIRefreshControl` and adds it to the `UITableView`.
     ///
     /// - Returns: the created refresh control.
-    public func addRefreshControl() -> UIRefreshControl {
+    func addRefreshControl() -> UIRefreshControl {
         let refreshControl = UIRefreshControl(frame: .zero)
         if #available(iOS 10.0, *) {
             base.refreshControl = refreshControl
@@ -24,7 +24,7 @@ public extension GooeyNamespace where Base: UITableView {
     ///     This block has no return value and takes a Boolean parameter indicating whether the animations
     ///     completed successfully. The value of this parameter is false if the animations were
     ///     interrupted for any reason.
-    public func update(_ batchUpdates: (() -> ())? = nil, completion: ((Bool) -> ())? = nil) {
+    func update(_ batchUpdates: (() -> ())? = nil, completion: ((Bool) -> ())? = nil) {
         if #available(iOS 11.0, *) {
             base.performBatchUpdates(batchUpdates, completion: completion)
         } else {
@@ -42,7 +42,7 @@ public extension GooeyNamespace where Base: UITableView {
     ///
     /// - Parameter section: the numerical section in the table view.
     /// - Returns: the last numerical row in the table view's section or nil
-    public func lastRow(inSection section: Int) -> Int? {
+    func lastRow(inSection section: Int) -> Int? {
         return base.numberOfRows(inSection: section) > 0 ? base.numberOfRows(inSection: section) - 1 : nil
     }
 
