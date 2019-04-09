@@ -154,58 +154,58 @@ public struct Color {
 public extension Color {
     
     /// The red hue.
-    public static let red = Color(255, 0, 0)
+    static let red = Color(255, 0, 0)
     
     /// The orange hue.
-    public static let orange = Color(255, 127, 0)
+    static let orange = Color(255, 127, 0)
     
     /// The yellow hue.
-    public static let yellow = Color(255, 255, 0)
+    static let yellow = Color(255, 255, 0)
     
     /// The green hue.
-    public static let green = Color(0, 255, 0)
+    static let green = Color(0, 255, 0)
 
     /// The cyan hue.
-    public static let cyan = Color(0, 255, 255)
+    static let cyan = Color(0, 255, 255)
     
     /// The blue hue.
-    public static let blue = Color(0, 0, 255)
+    static let blue = Color(0, 0, 255)
     
     /// The purple hue.
-    public static let purple = Color(127, 0, 127)
+    static let purple = Color(127, 0, 127)
     
     /// The white color.
-    public static let white = Color(255, 255, 255)
+    static let white = Color(255, 255, 255)
     
     /// The black color.
-    public static let black = Color(0, 0, 0)
+    static let black = Color(0, 0, 0)
     
     /// A clear black color.
-    public static let clear = Color(0, 0, 0, 0)
+    static let clear = Color(0, 0, 0, 0)
     
     /// The system-appearance red color.
-    public static let systemRed = Color(255, 59, 48)
+    static let systemRed = Color(255, 59, 48)
     
     /// The system-appearance orange color.
-    public static let systemOrange = Color(255, 149, 0)
+    static let systemOrange = Color(255, 149, 0)
     
     /// The system-appearance yellow color.
-    public static let systemYellow = Color(255, 204, 0)
+    static let systemYellow = Color(255, 204, 0)
     
     /// The system-appearance green color.
-    public static let systemGreen = Color(76, 217, 100)
+    static let systemGreen = Color(76, 217, 100)
     
     /// The system-appearance teal blue color.
-    public static let systemTealBlue = Color(90, 200, 250)
+    static let systemTealBlue = Color(90, 200, 250)
     
     /// The system-appearance blue color.
-    public static let systemBlue = Color(0, 122, 255)
+    static let systemBlue = Color(0, 122, 255)
     
     /// The system-appearance purple color.
-    public static let systemPurple = Color(88, 86, 214)
+    static let systemPurple = Color(88, 86, 214)
     
     /// The system-appearance pink color.
-    public static let systemPink = Color(255, 45, 85)
+    static let systemPink = Color(255, 45, 85)
     
 }
 

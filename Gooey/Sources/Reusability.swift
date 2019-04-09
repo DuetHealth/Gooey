@@ -11,7 +11,7 @@ public extension GooeyNamespace where Base: UITableView {
     /// Registers a number of classes for use in creating new table cells.
     ///
     /// - Parameter cells: The classes of cells that you want to use in the table.
-    public func register(cells: AnyClass...) {
+    func register(cells: AnyClass...) {
         cells.map { type in (type, fullyQualifiedName(of: type)) }
             .forEach(base.register(_:forCellReuseIdentifier:))
     }
@@ -19,7 +19,7 @@ public extension GooeyNamespace where Base: UITableView {
     /// Registers a cell for use in creating new table cells.
     ///
     /// - Parameter cell: The UITableViewCell subclass to register with the table.
-    public func register<Cell: UITableViewCell>(cell: Cell.Type) {
+    func register<Cell: UITableViewCell>(cell: Cell.Type) {
         base.register(cell, forCellReuseIdentifier: fullyQualifiedName(of: cell))
     }
 
@@ -45,7 +45,7 @@ public extension GooeyNamespace where Base: UITableView {
     ///
     /// - Parameter indexPath: The index path specifying the location of the cell.
     /// - Returns: A reused `Cell`. This method always returns a valid cell.
-    public func dequeueReusableCell<Cell: UITableViewCell>(at indexPath: IndexPath) -> Cell {
+    func dequeueReusableCell<Cell: UITableViewCell>(at indexPath: IndexPath) -> Cell {
         return base.dequeueReusableCell(withIdentifier: fullyQualifiedName(of: Cell.self), for: indexPath) as! Cell
     }
 
@@ -56,7 +56,7 @@ public extension GooeyNamespace where Base: UICollectionView {
     /// Registers a number of classes for use in creating new collection cells.
     ///
     /// - Parameter cells: The classes of cells that you want to use in the collection view.
-    public func register(cells: AnyClass...) {
+    func register(cells: AnyClass...) {
         cells.map { type in (type, fullyQualifiedName(of: type)) }
             .forEach(base.register(_:forCellWithReuseIdentifier:))
     }
@@ -64,7 +64,7 @@ public extension GooeyNamespace where Base: UICollectionView {
     /// Registers a cell for use in creating new collection cells.
     ///
     /// - Parameter cell: The UICollectionViewCell subclass to register with the collection view.
-    public func register<Cell: UICollectionViewCell>(cell: Cell.Type) {
+    func register<Cell: UICollectionViewCell>(cell: Cell.Type) {
         base.register(cell, forCellWithReuseIdentifier: fullyQualifiedName(of: cell))
     }
 
@@ -73,7 +73,7 @@ public extension GooeyNamespace where Base: UICollectionView {
     /// - Parameters:
     ///   - supplement: The class of view that you want to use in the collection view.
     ///   - kind: The kind of supplementary view with which the collection view should associate the class.
-    public func register(supplement: AnyClass, kind: String) {
+    func register(supplement: AnyClass, kind: String) {
         base.register(supplement, forSupplementaryViewOfKind: kind, withReuseIdentifier: fullyQualifiedName(of: supplement))
     }
 
@@ -99,7 +99,7 @@ public extension GooeyNamespace where Base: UICollectionView {
     ///
     /// - Parameter indexPath: The index path specifying the location of the cell.
     /// - Returns: A reused `Cell`. This method always returns a valid cell.
-    public func dequeueReusableCell<Cell: UICollectionViewCell>(at indexPath: IndexPath) -> Cell {
+    func dequeueReusableCell<Cell: UICollectionViewCell>(at indexPath: IndexPath) -> Cell {
         return base.dequeueReusableCell(withReuseIdentifier: fullyQualifiedName(of: Cell.self), for: indexPath) as! Cell
     }
 
@@ -125,7 +125,7 @@ public extension GooeyNamespace where Base: UICollectionView {
     ///
     /// - Parameter indexPath: The index path specifying the location of the cell.
     /// - Returns: A reused `Cell`. This method always returns a valid cell.
-    public func dequeueSupplementaryView<View: UICollectionReusableView>(kind: String, at indexPath: IndexPath) -> View {
+    func dequeueSupplementaryView<View: UICollectionReusableView>(kind: String, at indexPath: IndexPath) -> View {
         return base.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: fullyQualifiedName(of: View.self), for: indexPath) as! View
     }
 

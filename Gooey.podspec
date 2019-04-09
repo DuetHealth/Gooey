@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = 'Gooey'
-  s.version               = '2.0.1'
+  s.version               = '3.0.0'
   s.summary               = 'UIKit extensions and helpers to make everyday iOS development simpler.'
   s.description           = "UIKit extensions for simplifying development. Includes extensions for handling safeAreaLayoutGuide with backwards compatibility, less verbose reusable views, and more."
   s.license               = { type: 'MIT', file: 'LICENSE' }
@@ -12,6 +12,6 @@ Pod::Spec.new do |s|
   s.source_files          = 'Gooey/Sources/**/*.{h,m,swift}'
   s.requires_arc          = true
   s.ios.deployment_target = '9.0'
-  s.swift_version         = '4.2'
+  s.swift_version         = '5.0'
 end
 

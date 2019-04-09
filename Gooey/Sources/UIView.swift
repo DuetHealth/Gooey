@@ -10,7 +10,7 @@ public extension GooeyNamespace where Base: UIView {
     /// Use this anchor to create multiple homomorphous constraints between a view and its target. The
     /// the result of these operations create contexts for easily applying symmetric changes across the
     /// emitted constraints.
-    public var boundingAnchor: BoundingLayoutAnchor {
+    var boundingAnchor: BoundingLayoutAnchor {
         return BoundingLayoutAnchor(targeting: base)
     }
 
@@ -18,7 +18,7 @@ public extension GooeyNamespace where Base: UIView {
     ///
     /// On iOS 11 and above, this gets or sets the `directionalLayoutMargins` of the view; on older
     /// versions, this gets or sets the `layoutMargins`.
-    public var layoutMargins: EdgeInsets<Bounds> {
+    var layoutMargins: EdgeInsets<Bounds> {
         get {
             if #available(iOS 11.0, *) {
                 let margins = base.directionalLayoutMargins
