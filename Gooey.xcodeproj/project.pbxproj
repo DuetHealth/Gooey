@@ -33,6 +33,8 @@
 		B56F006021F66BC600F29145 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56F005E21F66BC600F29145 /* Nimble.framework */; };
 		B5747A6A21F67FF0009C80C1 /* Quick.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = B56F005D21F66BC600F29145 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B5747A6B21F67FF5009C80C1 /* Nimble.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = B56F005E21F66BC600F29145 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EA93A48722BCA7100003CC04 /* ConstraintGroupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA93A48622BCA7100003CC04 /* ConstraintGroupTests.swift */; };
+		EADEAB9C22BCB1C20049308E /* NSLayoutConstraint+Targets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADEAB9B22BCB1C20049308E /* NSLayoutConstraint+Targets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,8 @@
 		B55BB477202BA5A700B3C865 /* UIView+AccessibilitySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AccessibilitySpec.swift"; sourceTree = "<group>"; };
 		B56F005D21F66BC600F29145 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		B56F005E21F66BC600F29145 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		EA93A48622BCA7100003CC04 /* ConstraintGroupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintGroupTests.swift; sourceTree = "<group>"; };
+		EADEAB9B22BCB1C20049308E /* NSLayoutConstraint+Targets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Targets.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +156,7 @@
 		B55BB458202BA1E200B3C865 /* GooeyTests */ = {
 			isa = PBXGroup;
 			children = (
+				EA93A48622BCA7100003CC04 /* ConstraintGroupTests.swift */,
 				B55BB477202BA5A700B3C865 /* UIView+AccessibilitySpec.swift */,
 				B55BB45B202BA1E200B3C865 /* Info.plist */,
 			);
@@ -179,6 +184,7 @@
 				B55BB466202BA27F00B3C865 /* UIView.swift */,
 				B55BB474202BA3D000B3C865 /* UIView+Accessibility.swift */,
 				B55BB46A202BA30200B3C865 /* UIViewController.swift */,
+				EADEAB9B22BCB1C20049308E /* NSLayoutConstraint+Targets.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -310,6 +316,7 @@
 				94F30FAA20598CCD0073B904 /* ConstraintGroup.swift in Sources */,
 				94F30F9F20530A060073B904 /* SafeAreaLayoutGuide.swift in Sources */,
 				9410F9B42163A47200D04DC2 /* UILayoutGuide.swift in Sources */,
+				EADEAB9C22BCB1C20049308E /* NSLayoutConstraint+Targets.swift in Sources */,
 				B55BB475202BA3D000B3C865 /* UIView+Accessibility.swift in Sources */,
 				94F30FAC20598D8A0073B904 /* EdgeInsets.swift in Sources */,
 				B55BB467202BA27F00B3C865 /* UIView.swift in Sources */,
@@ -332,6 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA93A48722BCA7100003CC04 /* ConstraintGroupTests.swift in Sources */,
 				B55BB478202BA5A700B3C865 /* UIView+AccessibilitySpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
