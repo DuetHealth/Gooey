@@ -25,9 +25,9 @@ fileprivate extension NSLayoutConstraint {
 
 /// The `ConstraintGroup` type is a factory decorator for applying symmetric changes to grouped
 /// `NSLayoutConstraint` objects using a fluent interface.
-public class ConstraintGroup<A: LayoutAxis> {
+public class ConstraintGroup<A: LayoutAxis>: ConstraintRepresentable {
 
-    let constraints: [NSLayoutConstraint]
+    public let constraints: [NSLayoutConstraint]
     private var insets: UIEdgeInsets
 
     init<A>(constraints: [NSLayoutConstraint], insets: EdgeInsets<A>) {
