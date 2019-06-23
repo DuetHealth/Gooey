@@ -44,7 +44,7 @@ public extension GooeyNamespace where Base == NSLayoutConstraint.Type {
     ///     each constraint to `false`.
     ///
     /// - Parameter constraintRepresentables: Constraint representable
-    ///      conforming objects to be activated.
+    ///      conforming objects to be deactivated.
     func deactivate(_ constraintRepresentables: [ConstraintRepresentable]) {
         NSLayoutConstraint.deactivate(constraintRepresentables.reduce(into: [], { $0.append(contentsOf: $1.constraints) }))
     }
