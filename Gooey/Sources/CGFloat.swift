@@ -5,7 +5,7 @@ extension CGFloat: GooeyCompatible { }
 
 public extension GooeyNamespace where Base == CGFloat.Type {
 
-    /// Returns the point size for 1 pixel of operating device's nain screen.
+    /// Returns the point size for 1 pixel of operating device's main screen.
     var hairline: CGFloat {
         return 1 / UIScreen.main.scale
     }
@@ -21,7 +21,7 @@ public extension GooeyNamespace where Base == CGFloat.Type {
     }
 
     /// Returns a multiplier of the point size for 1 pixel of operating device's
-    /// nain screen.
+    /// main screen.
     func hairline(multiplier: CGFloat) -> CGFloat {
         return hairline * multiplier
     }
