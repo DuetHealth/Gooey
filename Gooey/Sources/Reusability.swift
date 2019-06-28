@@ -76,8 +76,8 @@ public extension GooeyNamespace where Base: UITableView {
     /// ...
     /// ```
     ///
-    /// - Parameter indexPath: The index path specifying the location of the cell.
-    /// - Returns: A reused `Cell`. This method always returns a valid cell.
+    /// - Parameter indexPath: The index path specifying the location of the view.
+    /// - Returns: A reused `View`. This method always returns a valid view.
     func dequeueReusableView<View: UITableViewHeaderFooterView>() -> View {
         return base.dequeueReusableHeaderFooterView(withIdentifier: fullyQualifiedName(of: View.self)) as! View
     }
