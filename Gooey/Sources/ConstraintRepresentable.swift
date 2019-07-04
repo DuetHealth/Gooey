@@ -1,8 +1,10 @@
 import Foundation
 import UIKit
 
+/// A type that can be converted to a defining set of constraints.
 public protocol ConstraintRepresentable {
 
+    /// The corresponding set of constraints describing `self`.
     var constraints: [NSLayoutConstraint] { get }
 
 }
