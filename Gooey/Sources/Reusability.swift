@@ -18,9 +18,16 @@ public extension GooeyNamespace where Base: UITableView {
 
     /// Registers a cell for use in creating new table cells.
     ///
-    /// - Parameter cell: The UITableViewCell subclass to register with the table.
+    /// - Parameter cell: The `UITableViewCell` subclass to register with the table.
     func register<Cell: UITableViewCell>(cell: Cell.Type) {
         base.register(cell, forCellReuseIdentifier: fullyQualifiedName(of: cell))
+    }
+
+    /// Registers a header/footer view for use in creating new section views.
+    ///
+    /// - Parameter view: The `UITableViewHeaderFooterView` subclass to register with the table.
+    func register<View: UITableViewHeaderFooterView>(view: View.Type) {
+        base.register(view, forHeaderFooterViewReuseIdentifier: fullyQualifiedName(of: view))
     }
 
     /// Returns a reusable table view cell of the specified type.
@@ -47,6 +54,32 @@ public extension GooeyNamespace where Base: UITableView {
     /// - Returns: A reused `Cell`. This method always returns a valid cell.
     func dequeueReusableCell<Cell: UITableViewCell>(at indexPath: IndexPath) -> Cell {
         return base.dequeueReusableCell(withIdentifier: fullyQualifiedName(of: Cell.self), for: indexPath) as! Cell
+    }
+
+    /// Returns a reusable header/footer view of the specified type.
+    ///
+    /// You must register the specialized type `View` by invoking `register(view:)`, otherwise
+    /// this method will raise an error as the internal reuse identifiers will not match.
+    ///
+    /// Example:
+    ///
+    /// ```
+    /// // In init(...), loadView(), or viewDidLoad()
+    /// ...
+    /// tableView.goo.register(view: WarningHeader.self)
+    /// ...
+    ///
+    /// // In tableView(_: viewForHeaderInSection:)
+    /// ...
+    /// let header: WarningHeader = tableView.goo.dequeueReusableView()
+    /// header.showWarning()
+    /// ...
+    /// ```
+    ///
+    /// - Parameter indexPath: The index path specifying the location of the view.
+    /// - Returns: A reused `View`. This method always returns a valid view.
+    func dequeueReusableView<View: UITableViewHeaderFooterView>() -> View {
+        return base.dequeueReusableHeaderFooterView(withIdentifier: fullyQualifiedName(of: View.self)) as! View
     }
 
 }
