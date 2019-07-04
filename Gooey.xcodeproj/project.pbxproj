@@ -33,6 +33,7 @@
 		B56F006021F66BC600F29145 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56F005E21F66BC600F29145 /* Nimble.framework */; };
 		B5747A6A21F67FF0009C80C1 /* Quick.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = B56F005D21F66BC600F29145 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B5747A6B21F67FF5009C80C1 /* Nimble.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = B56F005E21F66BC600F29145 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EA4D772E22BC8FA1008CDB87 /* ConstraintRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D772D22BC8FA1008CDB87 /* ConstraintRepresentable.swift */; };
 		EA93A48722BCA7100003CC04 /* ConstraintGroupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA93A48622BCA7100003CC04 /* ConstraintGroupTests.swift */; };
 		EADEAB9C22BCB1C20049308E /* NSLayoutConstraint+Targets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADEAB9B22BCB1C20049308E /* NSLayoutConstraint+Targets.swift */; };
 /* End PBXBuildFile section */
@@ -90,6 +91,7 @@
 		B55BB477202BA5A700B3C865 /* UIView+AccessibilitySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AccessibilitySpec.swift"; sourceTree = "<group>"; };
 		B56F005D21F66BC600F29145 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		B56F005E21F66BC600F29145 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		EA4D772D22BC8FA1008CDB87 /* ConstraintRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintRepresentable.swift; sourceTree = "<group>"; };
 		EA93A48622BCA7100003CC04 /* ConstraintGroupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintGroupTests.swift; sourceTree = "<group>"; };
 		EADEAB9B22BCB1C20049308E /* NSLayoutConstraint+Targets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Targets.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,6 +172,7 @@
 				94F30FA620598CAB0073B904 /* Bounding Anchor */,
 				941D3A5621665FC80044DC5F /* CGFloat.swift */,
 				94398128206ADFC8002AD1CA /* Color.swift */,
+				EA4D772D22BC8FA1008CDB87 /* ConstraintRepresentable.swift */,
 				B55BB472202BA3C300B3C865 /* GooeyNamespaceProxy.swift */,
 				941D3A58216661310044DC5F /* NSLayoutAnchor.swift */,
 				B55BB470202BA3AE00B3C865 /* Reusability.swift */,
@@ -330,6 +333,7 @@
 				94B6AF8820F79FDE00E185FC /* UIStackView.swift in Sources */,
 				B55BB469202BA2BF00B3C865 /* UITableView.swift in Sources */,
 				B55BB471202BA3AE00B3C865 /* Reusability.swift in Sources */,
+				EA4D772E22BC8FA1008CDB87 /* ConstraintRepresentable.swift in Sources */,
 				94F30FA820598CC30073B904 /* BoundingAnchor.swift in Sources */,
 				B55BB46D202BA33800B3C865 /* UINavigationController.swift in Sources */,
 			);
