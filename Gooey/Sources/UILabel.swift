@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-extension GooeyNamespace where Base: UILabel {
+public extension GooeyNamespace where Base: UILabel {
 
     @available(iOS 10.0, *)
     func setStyle(_ textStyle: UIFont.TextStyle) {
