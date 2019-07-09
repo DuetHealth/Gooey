@@ -12,6 +12,6 @@ Pod::Spec.new do |s|
   s.source_files          = 'Gooey/Sources/**/*.{h,m,swift}'
   s.requires_arc          = true
   s.ios.deployment_target = '9.0'
-  s.swift_version         = '5.0'
+  s.swift_versions        = ['4.1', '4.2', '5.0']
 end
 
