@@ -55,7 +55,7 @@ public struct ColorToken {
     }
 
     /// Returns the hue of this color (of degrees out of 360°) represented as a percent in 0...1.
-    var hue: CGFloat {
+    public var hue: CGFloat {
         if max(red, green, blue) == min(red, green, blue) { return 0 }
         let delta = value - min(percentRed, percentGreen, percentBlue)
         let absolute: CGFloat
@@ -70,12 +70,12 @@ public struct ColorToken {
     }
 
     /// Returns the saturation of this color represented as a percent in 0...1.
-    var saturation: CGFloat {
+    public var saturation: CGFloat {
         return max(red, green, blue) == 0 ? 0 : (value - min(percentRed, percentGreen, percentBlue)) / value
     }
 
     /// Returns the value of this color represented as a percent in 0...1.
-    var value: CGFloat {
+    public var value: CGFloat {
         return max(percentRed, percentGreen, percentBlue)
     }
     
