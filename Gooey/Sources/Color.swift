@@ -53,6 +53,31 @@ public struct ColorToken {
     public var percentAlpha: CGFloat {
         return alpha.percent
     }
+
+    /// Returns the hue of this color (of degrees out of 360º) represented as a percent in 0...1.
+    var hue: CGFloat {
+        if max(red, green, blue) == min(red, green, blue) { return 0 }
+        let delta = value - min(percentRed, percentGreen, percentBlue)
+        let absolute: CGFloat
+        if red >= green && red >= blue {
+            absolute = (60 * fmod((percentGreen - percentBlue) / delta, 6)) / 360
+        } else if green >= red && green >= blue {
+            absolute = (60 * ((percentBlue - percentRed) / delta + 2)) / 360
+        } else {
+            absolute = (60 * ((percentRed - percentGreen) / delta + 4)) / 360
+        }
+        return absolute < 0 ? absolute + 1 : absolute
+    }
+
+    /// Returns the saturation of this color represented as a percent in 0...1.
+    var saturation: CGFloat {
+        return max(red, green, blue) == 0 ? 0 : (value - min(percentRed, percentGreen, percentBlue)) / value
+    }
+
+    /// Returns the value of this color represented as a percent in 0...1.
+    var value: CGFloat {
+        return max(percentRed, percentGreen, percentBlue)
+    }
     
     /// Returns the intensity or saturation of the color.
     public var intensity: UInt8 {
@@ -109,6 +134,43 @@ public struct ColorToken {
         self.blue = toUInt8(blue)
         self.alpha = toUInt8(alpha)
     }
+
+    /// Creates a color from the given hue, saturation, and value on the unit scale (0...1).
+    public init(hue: CGFloat, saturation: CGFloat, value: CGFloat, alpha: CGFloat = 1) {
+        let c = max(0, min(1, value)) * max(0, min(1, saturation))
+        let x = c * (1 - abs(fmod((6 * max(0, min(1, hue))), 2) - 1))
+        let m = value - c
+        let percentRed: CGFloat
+        let percentGreen: CGFloat
+        let percentBlue: CGFloat
+        switch hue {
+        case 0..<(1 / 6):
+            percentRed = c
+            percentGreen = x
+            percentBlue = 0
+        case (1 / 6)..<(1 / 3):
+            percentRed = x
+            percentGreen = c
+            percentBlue = 0
+        case (1 / 3)..<(1 / 2):
+            percentRed = 0
+            percentGreen = c
+            percentBlue = x
+        case (1 / 2)..<(2 / 3):
+            percentRed = 0
+            percentGreen = x
+            percentBlue = c
+        case (2 / 3)..<(5 / 6):
+            percentRed = x
+            percentGreen = 0
+            percentBlue = c
+        default:
+            percentRed = c
+            percentGreen = 0
+            percentBlue = x
+        }
+        self.init(percents: percentRed + m, percentGreen + m, percentBlue + m, alpha)
+    }
     
     /// Returns a color whose components are tinted by the supplied value.
     public func tinted(by value: UInt8) -> ColorToken {
@@ -155,7 +217,7 @@ public struct ColorToken {
         case .some(.trailing): return "\(hash ? "#" : "")\(toHex(red))\(toHex(green))\(toHex(blue))\(toHex(self.alpha))"
         }
     }
-    
+
 }
 
 public extension ColorToken {
@@ -180,6 +242,9 @@ public extension ColorToken {
     
     /// The purple hue.
     static let purple = ColorToken(127, 0, 127)
+
+    /// The magenta hue.
+    static let magenta = ColorToken(255, 0, 255)
     
     /// The white color.
     static let white = ColorToken(255, 255, 255)
@@ -189,6 +254,11 @@ public extension ColorToken {
     
     /// A clear black color.
     static let clear = ColorToken(0, 0, 0, 0)
+
+    /// The given color with alpha 0.
+    static func transparent(_ color: ColorToken) -> ColorToken {
+        return color.withAlpha(0)
+    }
     
     /// The system-appearance red color.
     static let systemRed = ColorToken(255, 59, 48)
