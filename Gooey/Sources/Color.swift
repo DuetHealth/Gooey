@@ -1,8 +1,15 @@
 import Foundation
 import UIKit
 
+#if !canImport(SwiftUI)
+public typealias Color = ColorToken
+#endif
+
 /// Provides a unified convenience API for colors with a focus on brevity.
-public struct Color {
+///
+/// You should prefer using this type only by its exported typealias: `ColorToken` when targeting
+/// iOS 13 with SwiftUI or `Color` when targeting iOS 12.
+public struct ColorToken {
 
     /// The location of the alpha component in representations of this value.
     public enum AlphaLocation {
@@ -45,6 +52,31 @@ public struct Color {
     /// Returns the alpha component of this color represented as a percent.
     public var percentAlpha: CGFloat {
         return alpha.percent
+    }
+
+    /// Returns the hue of this color (of degrees out of 360°) represented as a percent in 0...1.
+    public var hue: CGFloat {
+        if max(red, green, blue) == min(red, green, blue) { return 0 }
+        let delta = value - min(percentRed, percentGreen, percentBlue)
+        let absolute: CGFloat
+        if red >= green && red >= blue {
+            absolute = (60 * fmod((percentGreen - percentBlue) / delta, 6)) / 360
+        } else if green >= red && green >= blue {
+            absolute = (60 * ((percentBlue - percentRed) / delta + 2)) / 360
+        } else {
+            absolute = (60 * ((percentRed - percentGreen) / delta + 4)) / 360
+        }
+        return absolute < 0 ? absolute + 1 : absolute
+    }
+
+    /// Returns the saturation of this color represented as a percent in 0...1.
+    public var saturation: CGFloat {
+        return max(red, green, blue) == 0 ? 0 : (value - min(percentRed, percentGreen, percentBlue)) / value
+    }
+
+    /// Returns the value of this color represented as a percent in 0...1.
+    public var value: CGFloat {
+        return max(percentRed, percentGreen, percentBlue)
     }
     
     /// Returns the intensity or saturation of the color.
@@ -102,37 +134,74 @@ public struct Color {
         self.blue = toUInt8(blue)
         self.alpha = toUInt8(alpha)
     }
+
+    /// Creates a color from the given hue, saturation, and value on the unit scale (0...1).
+    public init(hue: CGFloat, saturation: CGFloat, value: CGFloat, alpha: CGFloat = 1) {
+        let c = max(0, min(1, value)) * max(0, min(1, saturation))
+        let x = c * (1 - abs(fmod((6 * max(0, min(1, hue))), 2) - 1))
+        let m = value - c
+        let percentRed: CGFloat
+        let percentGreen: CGFloat
+        let percentBlue: CGFloat
+        switch hue {
+        case 0..<(1 / 6):
+            percentRed = c
+            percentGreen = x
+            percentBlue = 0
+        case (1 / 6)..<(1 / 3):
+            percentRed = x
+            percentGreen = c
+            percentBlue = 0
+        case (1 / 3)..<(1 / 2):
+            percentRed = 0
+            percentGreen = c
+            percentBlue = x
+        case (1 / 2)..<(2 / 3):
+            percentRed = 0
+            percentGreen = x
+            percentBlue = c
+        case (2 / 3)..<(5 / 6):
+            percentRed = x
+            percentGreen = 0
+            percentBlue = c
+        default:
+            percentRed = c
+            percentGreen = 0
+            percentBlue = x
+        }
+        self.init(percents: percentRed + m, percentGreen + m, percentBlue + m, alpha)
+    }
     
     /// Returns a color whose components are tinted by the supplied value.
-    public func tinted(by value: UInt8) -> Color {
+    public func tinted(by value: UInt8) -> ColorToken {
         let clampToUInt8: (UInt8, UInt8) -> UInt8 = { UInt8(min(Int(UInt8.max), Int($0) + Int($1))) }
-        return Color(clampToUInt8(red, value), clampToUInt8(green, value), clampToUInt8(blue, value))
+        return ColorToken(clampToUInt8(red, value), clampToUInt8(green, value), clampToUInt8(blue, value))
     }
     
     /// Returns a color whose components are shaded by the supplied value.
-    public func shaded(by value: UInt8) -> Color {
+    public func shaded(by value: UInt8) -> ColorToken {
         let clampToUInt8: (UInt8, UInt8) -> UInt8 = { UInt8(max(0, Int($0) - Int($1))) }
-        return Color(clampToUInt8(red, value), clampToUInt8(green, value), clampToUInt8(blue, value))
+        return ColorToken(clampToUInt8(red, value), clampToUInt8(green, value), clampToUInt8(blue, value))
     }
     
     /// Creates and returns a new color by substituting the red component of this color.
-    public func withRed(_ red: UInt8) -> Color {
-        return Color(red, green, blue, alpha)
+    public func withRed(_ red: UInt8) -> ColorToken {
+        return ColorToken(red, green, blue, alpha)
     }
     
     /// Creates and returns a new color by substituting the green component of this color.
-    public func withGreen(_ green: UInt8) -> Color {
-        return Color(red, green, blue, alpha)
+    public func withGreen(_ green: UInt8) -> ColorToken {
+        return ColorToken(red, green, blue, alpha)
     }
     
     /// Creates and returns a new color by substituting the blue component of this color.
-    public func withBlue(_ blue: UInt8) -> Color {
-        return Color(red, green, blue, alpha)
+    public func withBlue(_ blue: UInt8) -> ColorToken {
+        return ColorToken(red, green, blue, alpha)
     }
     
     /// Creates and returns a new color by substituting the alpha component of this color.
-    public func withAlpha(_ alpha: UInt8) -> Color {
-        return Color(red, green, blue, alpha)
+    public func withAlpha(_ alpha: UInt8) -> ColorToken {
+        return ColorToken(red, green, blue, alpha)
     }
     
     /// Returns the hex string literal which represents this color.
@@ -148,64 +217,72 @@ public struct Color {
         case .some(.trailing): return "\(hash ? "#" : "")\(toHex(red))\(toHex(green))\(toHex(blue))\(toHex(self.alpha))"
         }
     }
-    
+
 }
 
-public extension Color {
+public extension ColorToken {
     
     /// The red hue.
-    static let red = Color(255, 0, 0)
+    static let red = ColorToken(255, 0, 0)
     
     /// The orange hue.
-    static let orange = Color(255, 127, 0)
+    static let orange = ColorToken(255, 127, 0)
     
     /// The yellow hue.
-    static let yellow = Color(255, 255, 0)
+    static let yellow = ColorToken(255, 255, 0)
     
     /// The green hue.
-    static let green = Color(0, 255, 0)
+    static let green = ColorToken(0, 255, 0)
 
     /// The cyan hue.
-    static let cyan = Color(0, 255, 255)
+    static let cyan = ColorToken(0, 255, 255)
     
     /// The blue hue.
-    static let blue = Color(0, 0, 255)
+    static let blue = ColorToken(0, 0, 255)
     
     /// The purple hue.
-    static let purple = Color(127, 0, 127)
+    static let purple = ColorToken(127, 0, 127)
+
+    /// The magenta hue.
+    static let magenta = ColorToken(255, 0, 255)
     
     /// The white color.
-    static let white = Color(255, 255, 255)
+    static let white = ColorToken(255, 255, 255)
     
     /// The black color.
-    static let black = Color(0, 0, 0)
+    static let black = ColorToken(0, 0, 0)
     
     /// A clear black color.
-    static let clear = Color(0, 0, 0, 0)
+    static let clear = ColorToken(0, 0, 0, 0)
+
+    /// The given color with alpha 0.
+    static func transparent(_ color: ColorToken) -> ColorToken {
+        return color.withAlpha(0)
+    }
     
     /// The system-appearance red color.
-    static let systemRed = Color(255, 59, 48)
+    static let systemRed = ColorToken(255, 59, 48)
     
     /// The system-appearance orange color.
-    static let systemOrange = Color(255, 149, 0)
+    static let systemOrange = ColorToken(255, 149, 0)
     
     /// The system-appearance yellow color.
-    static let systemYellow = Color(255, 204, 0)
+    static let systemYellow = ColorToken(255, 204, 0)
     
     /// The system-appearance green color.
-    static let systemGreen = Color(76, 217, 100)
+    static let systemGreen = ColorToken(76, 217, 100)
     
     /// The system-appearance teal blue color.
-    static let systemTealBlue = Color(90, 200, 250)
+    static let systemTealBlue = ColorToken(90, 200, 250)
     
     /// The system-appearance blue color.
-    static let systemBlue = Color(0, 122, 255)
+    static let systemBlue = ColorToken(0, 122, 255)
     
     /// The system-appearance purple color.
-    static let systemPurple = Color(88, 86, 214)
+    static let systemPurple = ColorToken(88, 86, 214)
     
     /// The system-appearance pink color.
-    static let systemPink = Color(255, 45, 85)
+    static let systemPink = ColorToken(255, 45, 85)
     
 }
 
