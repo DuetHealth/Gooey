@@ -15,6 +15,7 @@
 		94398129206ADFC8002AD1CA /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94398128206ADFC8002AD1CA /* Color.swift */; };
 		94B6AF8820F79FDE00E185FC /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6AF8720F79FDE00E185FC /* UIStackView.swift */; };
 		94B8419E22B1241200205AD1 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B8419D22B1241200205AD1 /* UILabel.swift */; };
+		94D985A722E72D3B004DFA45 /* UIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D985A622E72D3B004DFA45 /* UIBarButtonItem.swift */; };
 		94CF27E322F06EBA000B80B6 /* ColorTokenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF27E222F06EBA000B80B6 /* ColorTokenTests.swift */; };
 		94CF27E422F0704D000B80B6 /* ConstraintGroupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA93A48622BCA7100003CC04 /* ConstraintGroupTests.swift */; };
 		94CF27E522F0704D000B80B6 /* UIView+AccessibilitySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55BB477202BA5A700B3C865 /* UIView+AccessibilitySpec.swift */; };
@@ -73,6 +74,7 @@
 		94398128206ADFC8002AD1CA /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		94B6AF8720F79FDE00E185FC /* UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
 		94B8419D22B1241200205AD1 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		94D985A622E72D3B004DFA45 /* UIBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButtonItem.swift; sourceTree = "<group>"; };
 		94CF27E222F06EBA000B80B6 /* ColorTokenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTokenTests.swift; sourceTree = "<group>"; };
 		94F30F9E20530A060073B904 /* SafeAreaLayoutGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAreaLayoutGuide.swift; sourceTree = "<group>"; };
 		94F30FA720598CC30073B904 /* BoundingAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundingAnchor.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				941D3A58216661310044DC5F /* NSLayoutAnchor.swift */,
 				B55BB470202BA3AE00B3C865 /* Reusability.swift */,
 				94F30F9E20530A060073B904 /* SafeAreaLayoutGuide.swift */,
+				94D985A622E72D3B004DFA45 /* UIBarButtonItem.swift */,
 				9438F26220A5BED300054664 /* UIControlEvents.swift */,
 				941D3A5A216663870044DC5F /* UIEdgeInsets.swift */,
 				94B8419D22B1241200205AD1 /* UILabel.swift */,
@@ -336,6 +339,7 @@
 				94B6AF8820F79FDE00E185FC /* UIStackView.swift in Sources */,
 				B55BB469202BA2BF00B3C865 /* UITableView.swift in Sources */,
 				B55BB471202BA3AE00B3C865 /* Reusability.swift in Sources */,
+				94D985A722E72D3B004DFA45 /* UIBarButtonItem.swift in Sources */,
 				EA4D772E22BC8FA1008CDB87 /* ConstraintRepresentable.swift in Sources */,
 				94F30FA820598CC30073B904 /* BoundingAnchor.swift in Sources */,
 				B55BB46D202BA33800B3C865 /* UINavigationController.swift in Sources */,
