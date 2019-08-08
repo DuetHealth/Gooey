@@ -116,6 +116,7 @@ public extension GooeyNamespace where Base == UIBarButtonItem.Type {
         return systemItem(.stop)
     }
 
+    /// Creates a new item containing the specified system item.
     func systemItem(_ item: UIBarButtonItem.SystemItem) -> UIBarButtonItem {
         return UIBarButtonItem(barButtonSystemItem: item, target: nil, action: nil)
     }
