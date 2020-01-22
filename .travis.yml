@@ -6,5 +6,4 @@ xcode_sdk: iphonesimulator13.0
 
 script:
     - xcodebuild -project Gooey.xcodeproj -scheme Gooey -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
-    - xcodebuild test -project Gooey.xcodeproj -scheme Gooey -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.0' -sdk iphonesimulator
 
