@@ -5,8 +5,6 @@ xcode_scheme: Gooey #4
 xcode_sdk: iphonesimulator12.2
 
 script:
-    - swift package update
-    - swift test
     - xcodebuild -project Gooey.xcodeproj -scheme Gooey -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
     - xcodebuild test -project Gooey.xcodeproj -scheme Gooey -destination 'platform=iOS Simulator,name=iPhone 6,OS=12.2' -sdk iphonesimulator
 
