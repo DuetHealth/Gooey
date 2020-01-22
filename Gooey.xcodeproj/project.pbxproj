@@ -18,6 +18,8 @@
 		94F30FA820598CC30073B904 /* BoundingAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F30FA720598CC30073B904 /* BoundingAnchor.swift */; };
 		94F30FAA20598CCD0073B904 /* ConstraintGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F30FA920598CCD0073B904 /* ConstraintGroup.swift */; };
 		94F30FAC20598D8A0073B904 /* EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F30FAB20598D8A0073B904 /* EdgeInsets.swift */; };
+		B55BB455202BA1E200B3C865 /* Gooey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55BB44B202BA1E200B3C865 /* Gooey.framework */; };
+		B55BB45C202BA1E200B3C865 /* Gooey.h in Headers */ = {isa = PBXBuildFile; fileRef = B55BB44E202BA1E200B3C865 /* Gooey.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B55BB467202BA27F00B3C865 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55BB466202BA27F00B3C865 /* UIView.swift */; };
 		B55BB469202BA2BF00B3C865 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55BB468202BA2BF00B3C865 /* UITableView.swift */; };
 		B55BB46B202BA30200B3C865 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55BB46A202BA30200B3C865 /* UIViewController.swift */; };
@@ -25,7 +27,37 @@
 		B55BB471202BA3AE00B3C865 /* Reusability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55BB470202BA3AE00B3C865 /* Reusability.swift */; };
 		B55BB473202BA3C400B3C865 /* GooeyNamespaceProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55BB472202BA3C300B3C865 /* GooeyNamespaceProxy.swift */; };
 		B55BB475202BA3D000B3C865 /* UIView+Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55BB474202BA3D000B3C865 /* UIView+Accessibility.swift */; };
+		B55BB478202BA5A700B3C865 /* UIView+AccessibilitySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55BB477202BA5A700B3C865 /* UIView+AccessibilitySpec.swift */; };
+		B56F005F21F66BC600F29145 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56F005D21F66BC600F29145 /* Quick.framework */; };
+		B56F006021F66BC600F29145 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56F005E21F66BC600F29145 /* Nimble.framework */; };
+		B5747A6A21F67FF0009C80C1 /* Quick.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = B56F005D21F66BC600F29145 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B5747A6B21F67FF5009C80C1 /* Nimble.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = B56F005E21F66BC600F29145 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B55BB456202BA1E200B3C865 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B55BB442202BA1E200B3C865 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B55BB44A202BA1E200B3C865;
+			remoteInfo = Gooey;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B56F006121F66BD700F29145 /* Copy Carthage Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B5747A6B21F67FF5009C80C1 /* Nimble.framework in Copy Carthage Frameworks */,
+				B5747A6A21F67FF0009C80C1 /* Quick.framework in Copy Carthage Frameworks */,
+			);
+			name = "Copy Carthage Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9410F9B32163A47200D04DC2 /* UILayoutGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILayoutGuide.swift; sourceTree = "<group>"; };
@@ -40,7 +72,10 @@
 		94F30FA920598CCD0073B904 /* ConstraintGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintGroup.swift; sourceTree = "<group>"; };
 		94F30FAB20598D8A0073B904 /* EdgeInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeInsets.swift; sourceTree = "<group>"; };
 		B55BB44B202BA1E200B3C865 /* Gooey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gooey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B55BB44E202BA1E200B3C865 /* Gooey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Gooey.h; sourceTree = "<group>"; };
 		B55BB44F202BA1E200B3C865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B55BB454202BA1E200B3C865 /* GooeyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GooeyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B55BB45B202BA1E200B3C865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B55BB466202BA27F00B3C865 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		B55BB468202BA2BF00B3C865 /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		B55BB46A202BA30200B3C865 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +83,9 @@
 		B55BB470202BA3AE00B3C865 /* Reusability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusability.swift; sourceTree = "<group>"; };
 		B55BB472202BA3C300B3C865 /* GooeyNamespaceProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooeyNamespaceProxy.swift; sourceTree = "<group>"; };
 		B55BB474202BA3D000B3C865 /* UIView+Accessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Accessibility.swift"; sourceTree = "<group>"; };
+		B55BB477202BA5A700B3C865 /* UIView+AccessibilitySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AccessibilitySpec.swift"; sourceTree = "<group>"; };
+		B56F005D21F66BC600F29145 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		B56F005E21F66BC600F29145 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +93,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B55BB451202BA1E200B3C865 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B55BB455202BA1E200B3C865 /* Gooey.framework in Frameworks */,
+				B56F005F21F66BC600F29145 /* Quick.framework in Frameworks */,
+				B56F006021F66BC600F29145 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +123,9 @@
 			isa = PBXGroup;
 			children = (
 				B55BB44D202BA1E200B3C865 /* Gooey */,
+				B55BB458202BA1E200B3C865 /* GooeyTests */,
 				B55BB44C202BA1E200B3C865 /* Products */,
+				B56F005C21F66BC600F29145 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				B55BB44B202BA1E200B3C865 /* Gooey.framework */,
+				B55BB454202BA1E200B3C865 /* GooeyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,9 +147,19 @@
 			path = Gooey;
 			sourceTree = "<group>";
 		};
+		B55BB458202BA1E200B3C865 /* GooeyTests */ = {
+			isa = PBXGroup;
+			children = (
+				B55BB477202BA5A700B3C865 /* UIView+AccessibilitySpec.swift */,
+				B55BB45B202BA1E200B3C865 /* Info.plist */,
+			);
+			path = GooeyTests;
+			sourceTree = "<group>";
+		};
 		B55BB465202BA1EA00B3C865 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B55BB44E202BA1E200B3C865 /* Gooey.h */,
 				94F30FA620598CAB0073B904 /* Bounding Anchor */,
 				941D3A5621665FC80044DC5F /* CGFloat.swift */,
 				94398128206ADFC8002AD1CA /* Color.swift */,
@@ -119,6 +180,15 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		B56F005C21F66BC600F29145 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B56F005E21F66BC600F29145 /* Nimble.framework */,
+				B56F005D21F66BC600F29145 /* Quick.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -126,6 +196,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B55BB45C202BA1E200B3C865 /* Gooey.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +221,25 @@
 			productReference = B55BB44B202BA1E200B3C865 /* Gooey.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		B55BB453202BA1E200B3C865 /* GooeyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B55BB462202BA1E200B3C865 /* Build configuration list for PBXNativeTarget "GooeyTests" */;
+			buildPhases = (
+				B55BB450202BA1E200B3C865 /* Sources */,
+				B55BB451202BA1E200B3C865 /* Frameworks */,
+				B55BB452202BA1E200B3C865 /* Resources */,
+				B56F006121F66BD700F29145 /* Copy Carthage Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B55BB457202BA1E200B3C865 /* PBXTargetDependency */,
+			);
+			name = GooeyTests;
+			productName = GooeyTests;
+			productReference = B55BB454202BA1E200B3C865 /* GooeyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,6 +251,11 @@
 				ORGANIZATIONNAME = "Duet Health";
 				TargetAttributes = {
 					B55BB44A202BA1E200B3C865 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1020;
+						ProvisioningStyle = Automatic;
+					};
+					B55BB453202BA1E200B3C865 = {
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
@@ -181,12 +276,20 @@
 			projectRoot = "";
 			targets = (
 				B55BB44A202BA1E200B3C865 /* Gooey */,
+				B55BB453202BA1E200B3C865 /* GooeyTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B55BB449202BA1E200B3C865 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B55BB452202BA1E200B3C865 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -221,7 +324,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B55BB450202BA1E200B3C865 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B55BB478202BA5A700B3C865 /* UIView+AccessibilitySpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B55BB457202BA1E200B3C865 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B55BB44A202BA1E200B3C865 /* Gooey */;
+			targetProxy = B55BB456202BA1E200B3C865 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		B55BB45D202BA1E200B3C865 /* Debug */ = {
@@ -386,6 +505,47 @@
 			};
 			name = Release;
 		};
+		B55BB463202BA1E200B3C865 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = GooeyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.duet.GooeyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B55BB464202BA1E200B3C865 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = GooeyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.duet.GooeyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -403,6 +563,15 @@
 			buildConfigurations = (
 				B55BB460202BA1E200B3C865 /* Debug */,
 				B55BB461202BA1E200B3C865 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B55BB462202BA1E200B3C865 /* Build configuration list for PBXNativeTarget "GooeyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B55BB463202BA1E200B3C865 /* Debug */,
+				B55BB464202BA1E200B3C865 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
