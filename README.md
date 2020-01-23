@@ -12,6 +12,8 @@ Cocoapods: `pod 'Gooey', '~> 3.0'`. See [Gooey.podspec](Gooey.podspec) for more 
 
 Carthage: `github "DuetHealth/Gooey" ~> 3.0 && carthage update`	
 
+Swift Package Manager: `.package(url: "https://github.com/DuetHealth/Gooey.git", from: "3.0.2")`
+
 ### Running tests	
 
 Run the command `pod install` to install the project's test dependencies and generate the workspace. Open `Gooey.xcworkspace`, select the framework target, and press `⌘ + U` to execute the test action of the target.	
