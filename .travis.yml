@@ -4,6 +4,10 @@ xcode_project: Gooey.xcodeproj #3
 xcode_scheme: Gooey #4
 xcode_sdk: iphonesimulator13.0
 
+before_install:
+  - pod lib lint
+  - ./validate_spm.sh Gooey.xcodeproj Gooey
+
 script:
     - xcodebuild -project Gooey.xcodeproj -scheme Gooey -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
 
