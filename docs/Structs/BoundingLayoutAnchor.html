@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BoundingLayoutAnchor Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/BoundingLayoutAnchor" class="dashAnchor"></a>
+    <a title="BoundingLayoutAnchor Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Gooey Docs</a> (78% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Gooey Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        BoundingLayoutAnchor Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ConstraintGroup.html">ConstraintGroup</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SafeAreaLayoutGuide.html">SafeAreaLayoutGuide</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:5Gooey6BoundsO">Bounds</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:5Gooey14HorizontalAxisO">HorizontalAxis</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:5Gooey12VerticalAxisO">VerticalAxis</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/NSLayoutConstraint.html">NSLayoutConstraint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIEdgeInsets.html">UIEdgeInsets</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/BoundingLayoutAnchorTarget.html">BoundingLayoutAnchorTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ConstraintRepresentable.html">ConstraintRepresentable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/GooeyCompatible.html">GooeyCompatible</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:5Gooey10LayoutAxisP">LayoutAxis</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/BoundingLayoutAnchor.html">BoundingLayoutAnchor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ColorToken.html">ColorToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ColorToken/AlphaLocation.html">– AlphaLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EdgeInsets.html">EdgeInsets</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GooeyNamespace.html">GooeyNamespace</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:5Gooey5Colora">Color</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>BoundingLayoutAnchor</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">BoundingLayoutAnchor</span></code></pre>
+
+                </div>
+              </div>
+            <p>The <code>BoundingLayoutAnchor</code> type is a factory decorator for creating grouped <code>NSLayoutConstraint</code>
+objects using a fluent interface (an interface designed to produce more readable code). Use
+these constraints to programatically define your layout using Auto Layout.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey20BoundingLayoutAnchorV17makeVerticalEdges7equalTo6insetsAA15ConstraintGroupCyAA0F4AxisOGSo6UIViewC_AA10EdgeInsetsVyAJGtF"></a>
+                    <a name="//apple_ref/swift/Method/makeVerticalEdges(equalTo:insets:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey20BoundingLayoutAnchorV17makeVerticalEdges7equalTo6insetsAA15ConstraintGroupCyAA0F4AxisOGSo6UIViewC_AA10EdgeInsetsVyAJGtF">makeVerticalEdges(equalTo:insets:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Constrains the top and bottom bound anchors to the reference view using the given insets.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">makeVerticalEdges</span><span class="p">(</span><span class="n">equalTo</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">,</span> <span class="nv">insets</span><span class="p">:</span> <span class="kt"><a href="../Structs/EdgeInsets.html">EdgeInsets</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums.html#/s:5Gooey12VerticalAxisO">VerticalAxis</a></span><span class="o">&gt;</span> <span class="o">=</span> <span class="o">.</span><span class="n">zero</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/ConstraintGroup.html">ConstraintGroup</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums.html#/s:5Gooey12VerticalAxisO">VerticalAxis</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view to which the bound anchors are constrained.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>insets</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The amount of interior space between the argument bound anchors.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey20BoundingLayoutAnchorV17makeVerticalEdges7equalTo6insetsAA15ConstraintGroupCyAA0F4AxisOGSo13UILayoutGuideC_AA10EdgeInsetsVyAJGtF"></a>
+                    <a name="//apple_ref/swift/Method/makeVerticalEdges(equalTo:insets:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey20BoundingLayoutAnchorV17makeVerticalEdges7equalTo6insetsAA15ConstraintGroupCyAA0F4AxisOGSo13UILayoutGuideC_AA10EdgeInsetsVyAJGtF">makeVerticalEdges(equalTo:insets:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Constrains the top and bottom bound anchors to the reference layout guide using the given insets.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">makeVerticalEdges</span><span class="p">(</span><span class="n">equalTo</span> <span class="nv">layoutGuide</span><span class="p">:</span> <span class="kt">UILayoutGuide</span><span class="p">,</span> <span class="nv">insets</span><span class="p">:</span> <span class="kt"><a href="../Structs/EdgeInsets.html">EdgeInsets</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums.html#/s:5Gooey12VerticalAxisO">VerticalAxis</a></span><span class="o">&gt;</span> <span class="o">=</span> <span class="o">.</span><span class="n">zero</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/ConstraintGroup.html">ConstraintGroup</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums.html#/s:5Gooey12VerticalAxisO">VerticalAxis</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view to which the bound anchors are constrained.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>insets</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The amount of interior space between the argument bound anchors.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey20BoundingLayoutAnchorV19makeHorizontalEdges7equalTo6insetsAA15ConstraintGroupCyAA0F4AxisOGSo6UIViewC_AA10EdgeInsetsVyAJGtF"></a>
+                    <a name="//apple_ref/swift/Method/makeHorizontalEdges(equalTo:insets:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey20BoundingLayoutAnchorV19makeHorizontalEdges7equalTo6insetsAA15ConstraintGroupCyAA0F4AxisOGSo6UIViewC_AA10EdgeInsetsVyAJGtF">makeHorizontalEdges(equalTo:insets:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Constrains the left and right bound anchors to the reference view using the given insets.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">makeHorizontalEdges</span><span class="p">(</span><span class="n">equalTo</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">,</span> <span class="nv">insets</span><span class="p">:</span> <span class="kt"><a href="../Structs/EdgeInsets.html">EdgeInsets</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums.html#/s:5Gooey14HorizontalAxisO">HorizontalAxis</a></span><span class="o">&gt;</span> <span class="o">=</span> <span class="o">.</span><span class="n">zero</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/ConstraintGroup.html">ConstraintGroup</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums.html#/s:5Gooey14HorizontalAxisO">HorizontalAxis</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view to which the bound anchors are constrained.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>insets</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The amount of interior space between the argument bound anchors.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey20BoundingLayoutAnchorV19makeHorizontalEdges7equalTo6insetsAA15ConstraintGroupCyAA0F4AxisOGSo13UILayoutGuideC_AA10EdgeInsetsVyAJGtF"></a>
+                    <a name="//apple_ref/swift/Method/makeHorizontalEdges(equalTo:insets:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey20BoundingLayoutAnchorV19makeHorizontalEdges7equalTo6insetsAA15ConstraintGroupCyAA0F4AxisOGSo13UILayoutGuideC_AA10EdgeInsetsVyAJGtF">makeHorizontalEdges(equalTo:insets:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Constrains the left and right bound anchors to the reference layout guide using the given insets.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">makeHorizontalEdges</span><span class="p">(</span><span class="n">equalTo</span> <span class="nv">layoutGuide</span><span class="p">:</span> <span class="kt">UILayoutGuide</span><span class="p">,</span> <span class="nv">insets</span><span class="p">:</span> <span class="kt"><a href="../Structs/EdgeInsets.html">EdgeInsets</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums.html#/s:5Gooey14HorizontalAxisO">HorizontalAxis</a></span><span class="o">&gt;</span> <span class="o">=</span> <span class="o">.</span><span class="n">zero</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/ConstraintGroup.html">ConstraintGroup</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums.html#/s:5Gooey14HorizontalAxisO">HorizontalAxis</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view to which the bound anchors are constrained.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>insets</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The amount of interior space between the argument bound anchors.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey20BoundingLayoutAnchorV27makeRelativeHorizontalEdges7equalTo6insetsAA15ConstraintGroupCyAA0G4AxisOGSo6UIViewC_AA10EdgeInsetsVyAJGtF"></a>
+                    <a name="//apple_ref/swift/Method/makeRelativeHorizontalEdges(equalTo:insets:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey20BoundingLayoutAnchorV27makeRelativeHorizontalEdges7equalTo6insetsAA15ConstraintGroupCyAA0G4AxisOGSo6UIViewC_AA10EdgeInsetsVyAJGtF">makeRelativeHorizontalEdges(equalTo:insets:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Constrains the leading and trailing bound anchors to the reference view using the given insets.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">makeRelativeHorizontalEdges</span><span class="p">(</span><span class="n">equalTo</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">,</span> <span class="nv">insets</span><span class="p">:</span> <span class="kt"><a href="../Structs/EdgeInsets.html">EdgeInsets</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums.html#/s:5Gooey14HorizontalAxisO">HorizontalAxis</a></span><span class="o">&gt;</span> <span class="o">=</span> <span class="o">.</span><span class="n">zero</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/ConstraintGroup.html">ConstraintGroup</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums.html#/s:5Gooey14HorizontalAxisO">HorizontalAxis</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view to which the bound anchors are constrained.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>inset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The amount of interior space between the argument bound anchors.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey20BoundingLayoutAnchorV27makeRelativeHorizontalEdges7equalTo6insetsAA15ConstraintGroupCyAA0G4AxisOGSo13UILayoutGuideC_AA10EdgeInsetsVyAJGtF"></a>
+                    <a name="//apple_ref/swift/Method/makeRelativeHorizontalEdges(equalTo:insets:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey20BoundingLayoutAnchorV27makeRelativeHorizontalEdges7equalTo6insetsAA15ConstraintGroupCyAA0G4AxisOGSo13UILayoutGuideC_AA10EdgeInsetsVyAJGtF">makeRelativeHorizontalEdges(equalTo:insets:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Constrains the leading and trailing bound anchors to the reference layout guide using the given insets.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">makeRelativeHorizontalEdges</span><span class="p">(</span><span class="n">equalTo</span> <span class="nv">layoutGuide</span><span class="p">:</span> <span class="kt">UILayoutGuide</span><span class="p">,</span> <span class="nv">insets</span><span class="p">:</span> <span class="kt"><a href="../Structs/EdgeInsets.html">EdgeInsets</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums.html#/s:5Gooey14HorizontalAxisO">HorizontalAxis</a></span><span class="o">&gt;</span> <span class="o">=</span> <span class="o">.</span><span class="n">zero</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/ConstraintGroup.html">ConstraintGroup</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums.html#/s:5Gooey14HorizontalAxisO">HorizontalAxis</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view to which the bound anchors are constrained.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>inset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The amount of interior space between the argument bound anchors.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey20BoundingLayoutAnchorV9makeEdges7equalTo6insetsAA15ConstraintGroupCyAA6BoundsOGSo6UIViewC_AA10EdgeInsetsVyAJGtF"></a>
+                    <a name="//apple_ref/swift/Method/makeEdges(equalTo:insets:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey20BoundingLayoutAnchorV9makeEdges7equalTo6insetsAA15ConstraintGroupCyAA6BoundsOGSo6UIViewC_AA10EdgeInsetsVyAJGtF">makeEdges(equalTo:insets:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Constrains all bound anchors to the reference view using the given insets.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">makeEdges</span><span class="p">(</span><span class="n">equalTo</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">,</span> <span class="nv">insets</span><span class="p">:</span> <span class="kt"><a href="../Structs/EdgeInsets.html">EdgeInsets</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums.html#/s:5Gooey6BoundsO">Bounds</a></span><span class="o">&gt;</span> <span class="o">=</span> <span class="o">.</span><span class="n">zero</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/ConstraintGroup.html">ConstraintGroup</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums.html#/s:5Gooey6BoundsO">Bounds</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view to which the position anchors are constrained.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>insets</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The surrounding insets applied to the receiving view.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey20BoundingLayoutAnchorV9makeEdges7equalTo6insetsAA15ConstraintGroupCyAA6BoundsOGSo13UILayoutGuideC_AA10EdgeInsetsVyAJGtF"></a>
+                    <a name="//apple_ref/swift/Method/makeEdges(equalTo:insets:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey20BoundingLayoutAnchorV9makeEdges7equalTo6insetsAA15ConstraintGroupCyAA6BoundsOGSo13UILayoutGuideC_AA10EdgeInsetsVyAJGtF">makeEdges(equalTo:insets:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Constrains all bound anchors to the reference layout guide using the given insets.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">makeEdges</span><span class="p">(</span><span class="n">equalTo</span> <span class="nv">layoutGuide</span><span class="p">:</span> <span class="kt">UILayoutGuide</span><span class="p">,</span> <span class="nv">insets</span><span class="p">:</span> <span class="kt"><a href="../Structs/EdgeInsets.html">EdgeInsets</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums.html#/s:5Gooey6BoundsO">Bounds</a></span><span class="o">&gt;</span> <span class="o">=</span> <span class="o">.</span><span class="n">zero</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/ConstraintGroup.html">ConstraintGroup</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums.html#/s:5Gooey6BoundsO">Bounds</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view to which the position anchors are constrained.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>insets</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The surrounding insets applied to the receiving view.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey20BoundingLayoutAnchorV17makeRelativeEdges7equalTo6insetsAA15ConstraintGroupCyAA6BoundsOGSo6UIViewC_AA10EdgeInsetsVyAJGtF"></a>
+                    <a name="//apple_ref/swift/Method/makeRelativeEdges(equalTo:insets:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey20BoundingLayoutAnchorV17makeRelativeEdges7equalTo6insetsAA15ConstraintGroupCyAA6BoundsOGSo6UIViewC_AA10EdgeInsetsVyAJGtF">makeRelativeEdges(equalTo:insets:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Constrains all bound anchors to the reference view&rsquo;s relative anchors using the given insets.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">makeRelativeEdges</span><span class="p">(</span><span class="n">equalTo</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">,</span> <span class="nv">insets</span><span class="p">:</span> <span class="kt"><a href="../Structs/EdgeInsets.html">EdgeInsets</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums.html#/s:5Gooey6BoundsO">Bounds</a></span><span class="o">&gt;</span> <span class="o">=</span> <span class="o">.</span><span class="n">zero</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/ConstraintGroup.html">ConstraintGroup</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums.html#/s:5Gooey6BoundsO">Bounds</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view to which the position anchors are constrained.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>insets</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The surrounding insets applied to the receiving view.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey20BoundingLayoutAnchorV17makeRelativeEdges7equalTo6insetsAA15ConstraintGroupCyAA6BoundsOGSo13UILayoutGuideC_AA10EdgeInsetsVyAJGtF"></a>
+                    <a name="//apple_ref/swift/Method/makeRelativeEdges(equalTo:insets:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey20BoundingLayoutAnchorV17makeRelativeEdges7equalTo6insetsAA15ConstraintGroupCyAA6BoundsOGSo13UILayoutGuideC_AA10EdgeInsetsVyAJGtF">makeRelativeEdges(equalTo:insets:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Constrains all bound anchors to the reference view&rsquo;s relative anchors using the given insets.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">makeRelativeEdges</span><span class="p">(</span><span class="n">equalTo</span> <span class="nv">layoutGuide</span><span class="p">:</span> <span class="kt">UILayoutGuide</span><span class="p">,</span> <span class="nv">insets</span><span class="p">:</span> <span class="kt"><a href="../Structs/EdgeInsets.html">EdgeInsets</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums.html#/s:5Gooey6BoundsO">Bounds</a></span><span class="o">&gt;</span> <span class="o">=</span> <span class="o">.</span><span class="n">zero</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/ConstraintGroup.html">ConstraintGroup</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums.html#/s:5Gooey6BoundsO">Bounds</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view to which the position anchors are constrained.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>insets</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The surrounding insets applied to the receiving view.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="https://github.com/DuetHealth/Gooey.git" target="_blank" rel="external">Duet Health</a>. All rights reserved. (Last updated: 2019-09-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

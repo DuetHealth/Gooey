@@ -1,0 +1,3136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GooeyNamespace Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/GooeyNamespace" class="dashAnchor"></a>
+    <a title="GooeyNamespace Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Gooey Docs</a> (78% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Gooey Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        GooeyNamespace Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ConstraintGroup.html">ConstraintGroup</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SafeAreaLayoutGuide.html">SafeAreaLayoutGuide</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:5Gooey6BoundsO">Bounds</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:5Gooey14HorizontalAxisO">HorizontalAxis</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:5Gooey12VerticalAxisO">VerticalAxis</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/NSLayoutConstraint.html">NSLayoutConstraint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIEdgeInsets.html">UIEdgeInsets</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/BoundingLayoutAnchorTarget.html">BoundingLayoutAnchorTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ConstraintRepresentable.html">ConstraintRepresentable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/GooeyCompatible.html">GooeyCompatible</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:5Gooey10LayoutAxisP">LayoutAxis</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/BoundingLayoutAnchor.html">BoundingLayoutAnchor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ColorToken.html">ColorToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ColorToken/AlphaLocation.html">– AlphaLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EdgeInsets.html">EdgeInsets</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GooeyNamespace.html">GooeyNamespace</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:5Gooey5Colora">Color</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>GooeyNamespace</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GooeyNamespace</span><span class="o">&lt;</span><span class="kt">Base</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>Encapsulates custom behaviors on types with a <q>proxy namespace</q> struct to avoid name conflicts.
+Any definitions are called similar to</p>
+<pre class="highlight swift"><code><span class="n">stackView</span><span class="o">.</span><span class="n">topAnchor</span><span class="o">.</span><span class="nf">constraint</span><span class="p">(</span><span class="nv">equalTo</span><span class="p">:</span> <span class="n">goo</span><span class="o">.</span><span class="n">topAnchor</span><span class="p">)</span><span class="o">.</span><span class="n">isActive</span> <span class="o">=</span> <span class="kc">true</span>
+</code></pre>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAA12CoreGraphics7CGFloatVmRszlE8hairlineAFvp"></a>
+                    <a name="//apple_ref/swift/Property/hairline" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAA12CoreGraphics7CGFloatVmRszlE8hairlineAFvp">hairline</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the point size for 1 pixel of operating device&rsquo;s main screen.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">hairline</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAA12CoreGraphics7CGFloatVmRszlE13systemSpacingAFvp"></a>
+                    <a name="//apple_ref/swift/Property/systemSpacing" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAA12CoreGraphics7CGFloatVmRszlE13systemSpacingAFvp">systemSpacing</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the standard system spacing value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">systemSpacing</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAA12CoreGraphics7CGFloatVmRszlE20touchTargetDimensionAFvp"></a>
+                    <a name="//apple_ref/swift/Property/touchTargetDimension" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAA12CoreGraphics7CGFloatVmRszlE20touchTargetDimensionAFvp">touchTargetDimension</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the suggested minimum dimension for touch targets.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">touchTargetDimension</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAA12CoreGraphics7CGFloatVmRszlE8hairline10multiplierA2F_tF"></a>
+                    <a name="//apple_ref/swift/Method/hairline(multiplier:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAA12CoreGraphics7CGFloatVmRszlE8hairline10multiplierA2F_tF">hairline(multiplier:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a multiplier of the point size for 1 pixel of operating device&rsquo;s
+main screen.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">hairline</span><span class="p">(</span><span class="nv">multiplier</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGFloat</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAA12CoreGraphics7CGFloatVmRszlE13systemSpacing10multiplierA2F_tF"></a>
+                    <a name="//apple_ref/swift/Method/systemSpacing(multiplier:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAA12CoreGraphics7CGFloatVmRszlE13systemSpacing10multiplierA2F_tF">systemSpacing(multiplier:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a multiple of the standard system spacing value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">systemSpacing</span><span class="p">(</span><span class="nv">multiplier</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGFloat</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo18NSLayoutConstraintCmRszlE8activateyyAA0D13Representable_pF"></a>
+                    <a name="//apple_ref/swift/Method/activate(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo18NSLayoutConstraintCmRszlE8activateyyAA0D13Representable_pF">activate(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The effect of this method is the same as setting the
+    <a href="apple-reference-documentation://hsRIb14KxL">isActive</a> property of
+    each constraint to <code>true</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">activate</span><span class="p">(</span><span class="n">_</span> <span class="nv">constraintRepresentable</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ConstraintRepresentable.html">ConstraintRepresentable</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>constraintRepresentable</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A constraint representable
+ conforming object to be activated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo18NSLayoutConstraintCmRszlE8activateyySayAA0D13Representable_pGF"></a>
+                    <a name="//apple_ref/swift/Method/activate(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo18NSLayoutConstraintCmRszlE8activateyySayAA0D13Representable_pGF">activate(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The effect of this method is the same as setting the
+    <a href="apple-reference-documentation://hsRIb14KxL">isActive</a> property of
+    each constraint to <code>true</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">activate</span><span class="p">(</span><span class="n">_</span> <span class="nv">constraintRepresentables</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/ConstraintRepresentable.html">ConstraintRepresentable</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>constraintRepresentables</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Constraint representable
+ conforming objects to be activated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo18NSLayoutConstraintCmRszlE10deactivateyyAA0D13Representable_pF"></a>
+                    <a name="//apple_ref/swift/Method/deactivate(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo18NSLayoutConstraintCmRszlE10deactivateyyAA0D13Representable_pF">deactivate(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The effect of this method is the same as setting the
+    <a href="apple-reference-documentation://hsRIb14KxL">isActive</a> property of
+    each constraint to <code>false</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">deactivate</span><span class="p">(</span><span class="n">_</span> <span class="nv">constraintRepresentable</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ConstraintRepresentable.html">ConstraintRepresentable</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>constraintRepresentable</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A constraint representable
+ conforming object to be deactivated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo18NSLayoutConstraintCmRszlE10deactivateyySayAA0D13Representable_pGF"></a>
+                    <a name="//apple_ref/swift/Method/deactivate(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo18NSLayoutConstraintCmRszlE10deactivateyySayAA0D13Representable_pGF">deactivate(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The effect of this method is the same as setting the
+    <a href="apple-reference-documentation://hsRIb14KxL">isActive</a> property of
+    each constraint to <code>false</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">deactivate</span><span class="p">(</span><span class="n">_</span> <span class="nv">constraintRepresentables</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/ConstraintRepresentable.html">ConstraintRepresentable</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>constraintRepresentables</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Constraint representable
+ conforming objects to be deactivated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo19NSLayoutXAxisAnchorCRbzlE35constraintEqualToSystemSpacingAfterySo0C10ConstraintCAEF"></a>
+                    <a name="//apple_ref/swift/Method/constraintEqualToSystemSpacingAfter(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo19NSLayoutXAxisAnchorCRbzlE35constraintEqualToSystemSpacingAfterySo0C10ConstraintCAEF">constraintEqualToSystemSpacingAfter(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a constraint which defines that the current anchor trails the specified anchor by the system spacing value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">constraintEqualToSystemSpacingAfter</span><span class="p">(</span><span class="n">_</span> <span class="nv">anchor</span><span class="p">:</span> <span class="kt">NSLayoutXAxisAnchor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">NSLayoutConstraint</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo19NSLayoutXAxisAnchorCRbzlE36constraintEqualToSystemSpacingBefore_10multiplierSo0C10ConstraintCAE_12CoreGraphics7CGFloatVtF"></a>
+                    <a name="//apple_ref/swift/Method/constraintEqualToSystemSpacingBefore(_:multiplier:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo19NSLayoutXAxisAnchorCRbzlE36constraintEqualToSystemSpacingBefore_10multiplierSo0C10ConstraintCAE_12CoreGraphics7CGFloatVtF">constraintEqualToSystemSpacingBefore(_:multiplier:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a constraint that defines by how much the current anchor leads the specified anchor.</p>
+
+<p>The distance between the two anchors is determined by multiplying the system spacing by the value in the multiplier parameter.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">constraintEqualToSystemSpacingBefore</span><span class="p">(</span><span class="n">_</span> <span class="nv">anchor</span><span class="p">:</span> <span class="kt">NSLayoutXAxisAnchor</span><span class="p">,</span> <span class="nv">multiplier</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">NSLayoutConstraint</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo19NSLayoutXAxisAnchorCRbzlE5guide2to2inSo13UILayoutGuideCAE_So6UIViewCtF"></a>
+                    <a name="//apple_ref/swift/Method/guide(to:in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo19NSLayoutXAxisAnchorCRbzlE5guide2to2inSo13UILayoutGuideCAE_So6UIViewCtF">guide(to:in:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates and returns a layout guide with leading and trailing anchors constrained between this
+anchor and the argument anchor contained within the specified view.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">guide</span><span class="p">(</span><span class="n">to</span> <span class="nv">other</span><span class="p">:</span> <span class="kt">NSLayoutXAxisAnchor</span><span class="p">,</span> <span class="k">in</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UILayoutGuide</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo19NSLayoutYAxisAnchorCRbzlE35constraintEqualToSystemSpacingBelowySo0C10ConstraintCAEF"></a>
+                    <a name="//apple_ref/swift/Method/constraintEqualToSystemSpacingBelow(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo19NSLayoutYAxisAnchorCRbzlE35constraintEqualToSystemSpacingBelowySo0C10ConstraintCAEF">constraintEqualToSystemSpacingBelow(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a constraint which defines that the current anchor is positioned below the specified anchor by the system spacing value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">constraintEqualToSystemSpacingBelow</span><span class="p">(</span><span class="n">_</span> <span class="nv">anchor</span><span class="p">:</span> <span class="kt">NSLayoutYAxisAnchor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">NSLayoutConstraint</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo19NSLayoutYAxisAnchorCRbzlE35constraintEqualToSystemSpacingAbove_10multiplierSo0C10ConstraintCAE_12CoreGraphics7CGFloatVtF"></a>
+                    <a name="//apple_ref/swift/Method/constraintEqualToSystemSpacingAbove(_:multiplier:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo19NSLayoutYAxisAnchorCRbzlE35constraintEqualToSystemSpacingAbove_10multiplierSo0C10ConstraintCAE_12CoreGraphics7CGFloatVtF">constraintEqualToSystemSpacingAbove(_:multiplier:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a constraint that defines by how much the current anchor is positioned the specified anchor by the system spacing value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">constraintEqualToSystemSpacingAbove</span><span class="p">(</span><span class="n">_</span> <span class="nv">anchor</span><span class="p">:</span> <span class="kt">NSLayoutYAxisAnchor</span><span class="p">,</span> <span class="nv">multiplier</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">NSLayoutConstraint</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo19NSLayoutYAxisAnchorCRbzlE45constraintLessThanOrEqualToSystemSpacingAbove_10multiplierSo0C10ConstraintCAE_12CoreGraphics7CGFloatVtF"></a>
+                    <a name="//apple_ref/swift/Method/constraintLessThanOrEqualToSystemSpacingAbove(_:multiplier:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo19NSLayoutYAxisAnchorCRbzlE45constraintLessThanOrEqualToSystemSpacingAbove_10multiplierSo0C10ConstraintCAE_12CoreGraphics7CGFloatVtF">constraintLessThanOrEqualToSystemSpacingAbove(_:multiplier:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">constraintLessThanOrEqualToSystemSpacingAbove</span><span class="p">(</span><span class="n">_</span> <span class="nv">anchor</span><span class="p">:</span> <span class="kt">NSLayoutYAxisAnchor</span><span class="p">,</span> <span class="nv">multiplier</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">NSLayoutConstraint</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo19NSLayoutYAxisAnchorCRbzlE5guide2to2inSo13UILayoutGuideCAE_So6UIViewCtF"></a>
+                    <a name="//apple_ref/swift/Method/guide(to:in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo19NSLayoutYAxisAnchorCRbzlE5guide2to2inSo13UILayoutGuideCAE_So6UIViewCtF">guide(to:in:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates and returns a layout guide with leading and trailing anchors constrained between this
+anchor and the argument anchor contained within the specified view.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">guide</span><span class="p">(</span><span class="n">to</span> <span class="nv">other</span><span class="p">:</span> <span class="kt">NSLayoutYAxisAnchor</span><span class="p">,</span> <span class="k">in</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UILayoutGuide</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo11UITableViewCRbzlE8register5cellsyyXlXpd_tF"></a>
+                    <a name="//apple_ref/swift/Method/register(cells:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo11UITableViewCRbzlE8register5cellsyyXlXpd_tF">register(cells:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Registers a number of classes for use in creating new table cells.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">register</span><span class="p">(</span><span class="nv">cells</span><span class="p">:</span> <span class="kt">AnyClass</span><span class="o">...</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cells</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The classes of cells that you want to use in the table.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo11UITableViewCRbzlE8register4cellyqd__m_tSo0cD4CellCRbd__lF"></a>
+                    <a name="//apple_ref/swift/Method/register(cell:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo11UITableViewCRbzlE8register4cellyqd__m_tSo0cD4CellCRbd__lF">register(cell:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Registers a cell for use in creating new table cells.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">register</span><span class="o">&lt;</span><span class="kt">Cell</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">cell</span><span class="p">:</span> <span class="kt">Cell</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="k">where</span> <span class="kt">Cell</span> <span class="p">:</span> <span class="kt">UITableViewCell</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cell</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>UITableViewCell</code> subclass to register with the table.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo11UITableViewCRbzlE8register4viewyqd__m_tSo0cd12HeaderFooterD0CRbd__lF"></a>
+                    <a name="//apple_ref/swift/Method/register(view:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo11UITableViewCRbzlE8register4viewyqd__m_tSo0cd12HeaderFooterD0CRbd__lF">register(view:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Registers a header/footer view for use in creating new section views.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">register</span><span class="o">&lt;</span><span class="kt">View</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">view</span><span class="p">:</span> <span class="kt">View</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="k">where</span> <span class="kt">View</span> <span class="p">:</span> <span class="kt">UITableViewHeaderFooterView</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>UITableViewHeaderFooterView</code> subclass to register with the table.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo11UITableViewCRbzlE19dequeueReusableCell2atqd__10Foundation9IndexPathV_tSo0cdG0CRbd__lF"></a>
+                    <a name="//apple_ref/swift/Method/dequeueReusableCell(at:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo11UITableViewCRbzlE19dequeueReusableCell2atqd__10Foundation9IndexPathV_tSo0cdG0CRbd__lF">dequeueReusableCell(at:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a reusable table view cell of the specified type.</p>
+
+<p>You must register the specialized type <code>Cell</code> by invoking <code><a href="../Structs/GooeyNamespace.html#/s:5Gooey0A9NamespaceVAASo11UITableViewCRbzlE8register5cellsyyXlXpd_tF">register(cells:)</a></code>, otherwise
+this method will raise an error as the internal reuse identifiers will not match.</p>
+
+<p>Example:</p>
+<pre class="highlight swift"><code><span class="c1">// In init(...), loadView(), or viewDidLoad()</span>
+<span class="o">...</span>
+<span class="n">tableView</span><span class="o">.</span><span class="n">goo</span><span class="o">.</span><span class="nf">register</span><span class="p">(</span><span class="nv">cells</span><span class="p">:</span> <span class="kt">MobilePhoneCell</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="kt">EmailCell</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="kt">WebsiteCell</span><span class="o">.</span><span class="k">self</span><span class="p">)</span>
+<span class="o">...</span>
+
+<span class="c1">// In tableView(_: cellForRowAt:)</span>
+<span class="o">...</span>
+<span class="k">let</span> <span class="nv">cell</span><span class="p">:</span> <span class="kt">EmailCell</span> <span class="o">=</span> <span class="n">tableView</span><span class="o">.</span><span class="n">goo</span><span class="o">.</span><span class="nf">dequeueReusableCell</span><span class="p">(</span><span class="nv">at</span><span class="p">:</span> <span class="n">indexPath</span><span class="p">)</span>
+<span class="n">cell</span><span class="o">.</span><span class="nf">emailCellBehavior</span><span class="p">()</span>
+<span class="o">...</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">dequeueReusableCell</span><span class="o">&lt;</span><span class="kt">Cell</span><span class="o">&gt;</span><span class="p">(</span><span class="n">at</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Cell</span> <span class="k">where</span> <span class="kt">Cell</span> <span class="p">:</span> <span class="kt">UITableViewCell</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>indexPath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The index path specifying the location of the cell.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A reused <code>Cell</code>. This method always returns a valid cell.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo11UITableViewCRbzlE015dequeueReusableD0qd__ySo0cd12HeaderFooterD0CRbd__lF"></a>
+                    <a name="//apple_ref/swift/Method/dequeueReusableView()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo11UITableViewCRbzlE015dequeueReusableD0qd__ySo0cd12HeaderFooterD0CRbd__lF">dequeueReusableView()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a reusable header/footer view of the specified type.</p>
+
+<p>You must register the specialized type <code>View</code> by invoking <code><a href="../Structs/GooeyNamespace.html#/s:5Gooey0A9NamespaceVAASo11UITableViewCRbzlE8register4viewyqd__m_tSo0cd12HeaderFooterD0CRbd__lF">register(view:)</a></code>, otherwise
+this method will raise an error as the internal reuse identifiers will not match.</p>
+
+<p>Example:</p>
+<pre class="highlight swift"><code><span class="c1">// In init(...), loadView(), or viewDidLoad()</span>
+<span class="o">...</span>
+<span class="n">tableView</span><span class="o">.</span><span class="n">goo</span><span class="o">.</span><span class="nf">register</span><span class="p">(</span><span class="nv">view</span><span class="p">:</span> <span class="kt">WarningHeader</span><span class="o">.</span><span class="k">self</span><span class="p">)</span>
+<span class="o">...</span>
+
+<span class="c1">// In tableView(_: viewForHeaderInSection:)</span>
+<span class="o">...</span>
+<span class="k">let</span> <span class="nv">header</span><span class="p">:</span> <span class="kt">WarningHeader</span> <span class="o">=</span> <span class="n">tableView</span><span class="o">.</span><span class="n">goo</span><span class="o">.</span><span class="nf">dequeueReusableView</span><span class="p">()</span>
+<span class="n">header</span><span class="o">.</span><span class="nf">showWarning</span><span class="p">()</span>
+<span class="o">...</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">dequeueReusableView</span><span class="o">&lt;</span><span class="kt">View</span><span class="o">&gt;</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">View</span> <span class="k">where</span> <span class="kt">View</span> <span class="p">:</span> <span class="kt">UITableViewHeaderFooterView</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>indexPath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The index path specifying the location of the view.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A reused <code>View</code>. This method always returns a valid view.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo16UICollectionViewCRbzlE8register5cellsyyXlXpd_tF"></a>
+                    <a name="//apple_ref/swift/Method/register(cells:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo16UICollectionViewCRbzlE8register5cellsyyXlXpd_tF">register(cells:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Registers a number of classes for use in creating new collection cells.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">register</span><span class="p">(</span><span class="nv">cells</span><span class="p">:</span> <span class="kt">AnyClass</span><span class="o">...</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cells</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The classes of cells that you want to use in the collection view.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo16UICollectionViewCRbzlE8register4cellyqd__m_tSo0cD4CellCRbd__lF"></a>
+                    <a name="//apple_ref/swift/Method/register(cell:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo16UICollectionViewCRbzlE8register4cellyqd__m_tSo0cD4CellCRbd__lF">register(cell:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Registers a cell for use in creating new collection cells.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">register</span><span class="o">&lt;</span><span class="kt">Cell</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">cell</span><span class="p">:</span> <span class="kt">Cell</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="k">where</span> <span class="kt">Cell</span> <span class="p">:</span> <span class="kt">UICollectionViewCell</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cell</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The UICollectionViewCell subclass to register with the collection view.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo16UICollectionViewCRbzlE8register10supplement4kindyyXlXp_SStF"></a>
+                    <a name="//apple_ref/swift/Method/register(supplement:kind:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo16UICollectionViewCRbzlE8register10supplement4kindyyXlXp_SStF">register(supplement:kind:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Registers a class for use in creating new collection view supplementary views.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">register</span><span class="p">(</span><span class="nv">supplement</span><span class="p">:</span> <span class="kt">AnyClass</span><span class="p">,</span> <span class="nv">kind</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>supplement</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The class of view that you want to use in the collection view.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>kind</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The kind of supplementary view with which the collection view should associate the class.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo16UICollectionViewCRbzlE19dequeueReusableCell2atqd__10Foundation9IndexPathV_tSo0cdG0CRbd__lF"></a>
+                    <a name="//apple_ref/swift/Method/dequeueReusableCell(at:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo16UICollectionViewCRbzlE19dequeueReusableCell2atqd__10Foundation9IndexPathV_tSo0cdG0CRbd__lF">dequeueReusableCell(at:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a reusable collection view cell of the specified type.</p>
+
+<p>You must register the specialized type <code>Cell</code> by invoking <code><a href="../Structs/GooeyNamespace.html#/s:5Gooey0A9NamespaceVAASo11UITableViewCRbzlE8register5cellsyyXlXpd_tF">register(cells:)</a></code>, otherwise
+this method will raise an error as the internal reuse identifiers will not match.</p>
+
+<p>Example:</p>
+<pre class="highlight swift"><code><span class="c1">// In init(...), loadView(), or viewDidLoad()</span>
+<span class="o">...</span>
+<span class="n">collectionView</span><span class="o">.</span><span class="n">goo</span><span class="o">.</span><span class="nf">register</span><span class="p">(</span><span class="kt">MobilePhoneCell</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="kt">EmailCell</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="kt">WebsiteCell</span><span class="o">.</span><span class="k">self</span><span class="p">)</span>
+<span class="o">...</span>
+
+<span class="c1">// In collectionView(_: cellForRowAt:)</span>
+<span class="o">...</span>
+<span class="k">let</span> <span class="nv">cell</span><span class="p">:</span> <span class="kt">PictureCell</span> <span class="o">=</span> <span class="n">collectionView</span><span class="o">.</span><span class="n">goo</span><span class="o">.</span><span class="nf">dequeueReusableCell</span><span class="p">(</span><span class="nv">at</span><span class="p">:</span> <span class="n">indexPath</span><span class="p">)</span>
+<span class="n">cell</span><span class="o">.</span><span class="nf">setLikeCounter</span><span class="p">(</span><span class="nv">to</span><span class="p">:</span> <span class="mi">5</span><span class="p">)</span>
+<span class="o">...</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">dequeueReusableCell</span><span class="o">&lt;</span><span class="kt">Cell</span><span class="o">&gt;</span><span class="p">(</span><span class="n">at</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Cell</span> <span class="k">where</span> <span class="kt">Cell</span> <span class="p">:</span> <span class="kt">UICollectionViewCell</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>indexPath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The index path specifying the location of the cell.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A reused <code>Cell</code>. This method always returns a valid cell.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo16UICollectionViewCRbzlE020dequeueSupplementaryD04kind2atqd__SS_10Foundation9IndexPathVtSo0c8ReusableD0CRbd__lF"></a>
+                    <a name="//apple_ref/swift/Method/dequeueSupplementaryView(kind:at:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo16UICollectionViewCRbzlE020dequeueSupplementaryD04kind2atqd__SS_10Foundation9IndexPathVtSo0c8ReusableD0CRbd__lF">dequeueSupplementaryView(kind:at:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a reusable supplementary view of the specified type.</p>
+
+<p>You must register the specialized type <code>Cell</code> by invoking <code><a href="../Structs/GooeyNamespace.html#/s:5Gooey0A9NamespaceVAASo16UICollectionViewCRbzlE8register10supplement4kindyyXlXp_SStF">register(supplement:kind:)</a></code>,
+otherwise this method will raise an error as the internal reuse identifiers will not match.</p>
+
+<p>Example:</p>
+<pre class="highlight swift"><code><span class="c1">// In init(...), loadView(), or viewDidLoad()</span>
+<span class="o">...</span>
+<span class="n">collectionView</span><span class="o">.</span><span class="n">goo</span><span class="o">.</span><span class="nf">register</span><span class="p">(</span><span class="nv">cells</span><span class="p">:</span> <span class="kt">PictureCell</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="kt">StatusCell</span><span class="o">.</span><span class="k">self</span><span class="p">)</span>
+<span class="o">...</span>
+
+<span class="c1">// In collectionView(_: cellForRowAt:)</span>
+<span class="o">...</span>
+<span class="k">let</span> <span class="nv">cell</span><span class="p">:</span> <span class="kt">PictureCell</span> <span class="o">=</span> <span class="n">collectionView</span><span class="o">.</span><span class="n">goo</span><span class="o">.</span><span class="nf">dequeueReusableCell</span><span class="p">(</span><span class="nv">at</span><span class="p">:</span> <span class="n">indexPath</span><span class="p">)</span>
+<span class="n">cell</span><span class="o">.</span><span class="nf">setLikeCounter</span><span class="p">(</span><span class="nv">to</span><span class="p">:</span> <span class="mi">5</span><span class="p">)</span>
+<span class="o">...</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">dequeueSupplementaryView</span><span class="o">&lt;</span><span class="kt">View</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">kind</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">at</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">View</span> <span class="k">where</span> <span class="kt">View</span> <span class="p">:</span> <span class="kt">UICollectionReusableView</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>indexPath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The index path specifying the location of the cell.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A reused <code>Cell</code>. This method always returns a valid cell.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE6actionAEvp"></a>
+                    <a name="//apple_ref/swift/Property/action" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE6actionAEvp">action</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The system action button.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">action</span><span class="p">:</span> <span class="kt">UIBarButtonItem</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE3addAEvp"></a>
+                    <a name="//apple_ref/swift/Property/add" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE3addAEvp">add</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The system plus button containing an icon of a plus sign.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">add</span><span class="p">:</span> <span class="kt">UIBarButtonItem</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE9bookmarksAEvp"></a>
+                    <a name="//apple_ref/swift/Property/bookmarks" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE9bookmarksAEvp">bookmarks</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The system bookmarks button.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">bookmarks</span><span class="p">:</span> <span class="kt">UIBarButtonItem</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE6cameraAEvp"></a>
+                    <a name="//apple_ref/swift/Property/camera" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE6cameraAEvp">camera</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The system camera button.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">camera</span><span class="p">:</span> <span class="kt">UIBarButtonItem</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE6cancelAEvp"></a>
+                    <a name="//apple_ref/swift/Property/cancel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE6cancelAEvp">cancel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The system cancel button, localized.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">cancel</span><span class="p">:</span> <span class="kt">UIBarButtonItem</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE7composeAEvp"></a>
+                    <a name="//apple_ref/swift/Property/compose" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE7composeAEvp">compose</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The system compose button.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">compose</span><span class="p">:</span> <span class="kt">UIBarButtonItem</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE4doneAEvp"></a>
+                    <a name="//apple_ref/swift/Property/done" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE4doneAEvp">done</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The system done button, localized.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">done</span><span class="p">:</span> <span class="kt">UIBarButtonItem</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE4editAEvp"></a>
+                    <a name="//apple_ref/swift/Property/edit" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE4editAEvp">edit</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The system edit button, localized.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">edit</span><span class="p">:</span> <span class="kt">UIBarButtonItem</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE11fastForwardAEvp"></a>
+                    <a name="//apple_ref/swift/Property/fastForward" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE11fastForwardAEvp">fastForward</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The system fast forward button.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">fastForward</span><span class="p">:</span> <span class="kt">UIBarButtonItem</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE10fixedSpaceyAE12CoreGraphics7CGFloatVF"></a>
+                    <a name="//apple_ref/swift/Method/fixedSpace(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE10fixedSpaceyAE12CoreGraphics7CGFloatVF">fixedSpace(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Blank space to add between other items. Only the width property is used when this value is set.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fixedSpace</span><span class="p">(</span><span class="n">_</span> <span class="nv">spacing</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UIBarButtonItem</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE13flexibleSpaceAEvp"></a>
+                    <a name="//apple_ref/swift/Property/flexibleSpace" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE13flexibleSpaceAEvp">flexibleSpace</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Blank space to add between other items. The space is distributed equally between the other items. Other item properties are ignored when this value is set.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">flexibleSpace</span><span class="p">:</span> <span class="kt">UIBarButtonItem</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE8organizeAEvp"></a>
+                    <a name="//apple_ref/swift/Property/organize" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE8organizeAEvp">organize</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A button specialized for placement on a toolbar or tab bar.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">organize</span><span class="p">:</span> <span class="kt">UIBarButtonItem</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE8pageCurlAEvp"></a>
+                    <a name="//apple_ref/swift/Property/pageCurl" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE8pageCurlAEvp">pageCurl</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The system page curl button.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(*, deprecated, message: "UIBarButtonSystemItemPageCurl is not recommended for apps that run in iOS 7 and later.")</span>
+<span class="k">var</span> <span class="nv">pageCurl</span><span class="p">:</span> <span class="kt">UIBarButtonItem</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE5pauseAEvp"></a>
+                    <a name="//apple_ref/swift/Property/pause" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE5pauseAEvp">pause</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The system pause button.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">pause</span><span class="p">:</span> <span class="kt">UIBarButtonItem</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE4playAEvp"></a>
+                    <a name="//apple_ref/swift/Property/play" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE4playAEvp">play</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The system play button.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">play</span><span class="p">:</span> <span class="kt">UIBarButtonItem</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE4redoAEvp"></a>
+                    <a name="//apple_ref/swift/Property/redo" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE4redoAEvp">redo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The system redo button.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">redo</span><span class="p">:</span> <span class="kt">UIBarButtonItem</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE7refreshAEvp"></a>
+                    <a name="//apple_ref/swift/Property/refresh" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE7refreshAEvp">refresh</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The system refresh button.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">refresh</span><span class="p">:</span> <span class="kt">UIBarButtonItem</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE5replyAEvp"></a>
+                    <a name="//apple_ref/swift/Property/reply" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE5replyAEvp">reply</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The system reply button.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">reply</span><span class="p">:</span> <span class="kt">UIBarButtonItem</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE6rewindAEvp"></a>
+                    <a name="//apple_ref/swift/Property/rewind" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE6rewindAEvp">rewind</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The system rewind button.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">rewind</span><span class="p">:</span> <span class="kt">UIBarButtonItem</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE4saveAEvp"></a>
+                    <a name="//apple_ref/swift/Property/save" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE4saveAEvp">save</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The system save button.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">save</span><span class="p">:</span> <span class="kt">UIBarButtonItem</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE6searchAEvp"></a>
+                    <a name="//apple_ref/swift/Property/search" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE6searchAEvp">search</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The system search button.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">search</span><span class="p">:</span> <span class="kt">UIBarButtonItem</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE4stopAEvp"></a>
+                    <a name="//apple_ref/swift/Property/stop" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE4stopAEvp">stop</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The system stop button.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">stop</span><span class="p">:</span> <span class="kt">UIBarButtonItem</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE06systemE0yAESo0cd6SystemE0VF"></a>
+                    <a name="//apple_ref/swift/Method/systemItem(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE06systemE0yAESo0cd6SystemE0VF">systemItem(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a new item containing the specified system item.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">systemItem</span><span class="p">(</span><span class="n">_</span> <span class="nv">item</span><span class="p">:</span> <span class="kt">UIBarButtonItem</span><span class="o">.</span><span class="kt">SystemItem</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UIBarButtonItem</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE11systemSpace10multiplierAE12CoreGraphics7CGFloatV_tF"></a>
+                    <a name="//apple_ref/swift/Method/systemSpace(multiplier:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE11systemSpace10multiplierAE12CoreGraphics7CGFloatV_tF">systemSpace(multiplier:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Blank space to add between other items. The width is calculated as a product of the standard system spacing.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">systemSpace</span><span class="p">(</span><span class="nv">multiplier</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UIBarButtonItem</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE5trashAEvp"></a>
+                    <a name="//apple_ref/swift/Property/trash" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE5trashAEvp">trash</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The system trash button.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">trash</span><span class="p">:</span> <span class="kt">UIBarButtonItem</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE4undoAEvp"></a>
+                    <a name="//apple_ref/swift/Property/undo" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo15UIBarButtonItemCmRszlE4undoAEvp">undo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The system undo button.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">undo</span><span class="p">:</span> <span class="kt">UIBarButtonItem</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo15UIControlEventsVmRszlE14endedTouchDownAEvp"></a>
+                    <a name="//apple_ref/swift/Property/endedTouchDown" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo15UIControlEventsVmRszlE14endedTouchDownAEvp">endedTouchDown</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Any event to which the <code>.touchDownInside</code> event transitions.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">endedTouchDown</span><span class="p">:</span> <span class="kt">UIControl</span><span class="o">.</span><span class="kt">Event</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo12UIEdgeInsetsVmRszlE13systemSpacingAEvp"></a>
+                    <a name="//apple_ref/swift/Property/systemSpacing" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo12UIEdgeInsetsVmRszlE13systemSpacingAEvp">systemSpacing</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns insets where each inset is equal to the system spacing value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">systemSpacing</span><span class="p">:</span> <span class="kt">UIEdgeInsets</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo12UIEdgeInsetsVmRszlE013systemSpacingD0yAE12CoreGraphics7CGFloatVF"></a>
+                    <a name="//apple_ref/swift/Method/systemSpacingInsets(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo12UIEdgeInsetsVmRszlE013systemSpacingD0yAE12CoreGraphics7CGFloatVF">systemSpacingInsets(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns insets where each inset is equal to the system spacing value multiplied by the given multiplier.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">systemSpacingInsets</span><span class="p">(</span><span class="n">_</span> <span class="nv">multiplier</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UIEdgeInsets</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo12UIEdgeInsetsVmRszlE013systemSpacingD03top4left6bottom5rightAE12CoreGraphics7CGFloatV_A3MtF"></a>
+                    <a name="//apple_ref/swift/Method/systemSpacingInsets(top:left:bottom:right:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo12UIEdgeInsetsVmRszlE013systemSpacingD03top4left6bottom5rightAE12CoreGraphics7CGFloatV_A3MtF">systemSpacingInsets(top:left:bottom:right:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns insets where each inset is equal to the system spacing value multiplied by the given multiplier for that inset.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">systemSpacingInsets</span><span class="p">(</span><span class="nv">top</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">left</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">bottom</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">right</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UIEdgeInsets</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo12UIEdgeInsetsVRszlE5inset2byA2E_tF"></a>
+                    <a name="//apple_ref/swift/Method/inset(by:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo12UIEdgeInsetsVRszlE5inset2byA2E_tF">inset(by:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">inset</span><span class="p">(</span><span class="n">by</span> <span class="nv">insets</span><span class="p">:</span> <span class="kt">UIEdgeInsets</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UIEdgeInsets</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo12UIEdgeInsetsVRszlE6outset2byA2E_tF"></a>
+                    <a name="//apple_ref/swift/Method/outset(by:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo12UIEdgeInsetsVRszlE6outset2byA2E_tF">outset(by:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">outset</span><span class="p">(</span><span class="n">by</span> <span class="nv">insets</span><span class="p">:</span> <span class="kt">UIEdgeInsets</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UIEdgeInsets</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo7UILabelCRbzlE8setStyleyySo010UIFontTextE0aF"></a>
+                    <a name="//apple_ref/swift/Method/setStyle(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo7UILabelCRbzlE8setStyleyySo010UIFontTextE0aF">setStyle(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setStyle</span><span class="p">(</span><span class="n">_</span> <span class="nv">textStyle</span><span class="p">:</span> <span class="kt">UIFont</span><span class="o">.</span><span class="kt">TextStyle</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo22UINavigationControllerCRbzlE08pushViewD0_8animated10completionySo06UIViewD0C_SbyyctF"></a>
+                    <a name="//apple_ref/swift/Method/pushViewController(_:animated:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo22UINavigationControllerCRbzlE08pushViewD0_8animated10completionySo06UIViewD0C_SbyyctF">pushViewController(_:animated:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Pushes a view controller onto the receiver’s stack and updates the display, calling the given
+completion block once the animation finishes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">pushViewController</span><span class="p">(</span><span class="n">_</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span> <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>viewController</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view controller to push onto the stack.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>animated</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Specify true to animate the transition or false if you do not want the
+      transition to be animated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a closure that is invoked after the transition animation has completed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo22UINavigationControllerCRbzlE07popViewD08animated10completionSo06UIViewD0CSgSb_yyctF"></a>
+                    <a name="//apple_ref/swift/Method/popViewController(animated:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo22UINavigationControllerCRbzlE07popViewD08animated10completionSo06UIViewD0CSgSb_yyctF">popViewController(animated:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Pops the top view controller on the receiver’s stack and updates the display, calling the given
+completion block once the animation finishes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">func</span> <span class="nf">popViewController</span><span class="p">(</span><span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="p">())</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>animated</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Specify true to animate the transition or false if you do not want the
+      transition to be animated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a closure that is invoked after the transition animation has completed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo22UINavigationControllerCRbzlE013popToRootViewD08animated10completionSaySo06UIViewD0CGSgSb_yyctF"></a>
+                    <a name="//apple_ref/swift/Method/popToRootViewController(animated:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo22UINavigationControllerCRbzlE013popToRootViewD08animated10completionSaySo06UIViewD0CGSgSb_yyctF">popToRootViewController(animated:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Pops to the root view controller of the receiver’s stack and updates the display, calling the given
+completion block once the animation finishes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">func</span> <span class="nf">popToRootViewController</span><span class="p">(</span><span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="p">())</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">UIViewController</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>animated</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Specify true to animate the transition or false if you do not want the
+      transition to be animated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a closure that is invoked after the transition animation has completed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo11UIStackViewCRbzlE19addArrangedSubviewsyySo6UIViewCd_tF"></a>
+                    <a name="//apple_ref/swift/Method/addArrangedSubviews(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo11UIStackViewCRbzlE19addArrangedSubviewsyySo6UIViewCd_tF">addArrangedSubviews(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds multiple arranged subviews in the order in which they are supplied.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addArrangedSubviews</span><span class="p">(</span><span class="n">_</span> <span class="nv">subviews</span><span class="p">:</span> <span class="kt">UIView</span><span class="o">...</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>subviews</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>variadic views to add as subviews</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo11UIStackViewCRbzlE19addArrangedSubviewsyySaySo6UIViewCGF"></a>
+                    <a name="//apple_ref/swift/Method/addArrangedSubviews(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo11UIStackViewCRbzlE19addArrangedSubviewsyySaySo6UIViewCGF">addArrangedSubviews(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds multiple arranged subviews in the order in which they are supplied.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addArrangedSubviews</span><span class="p">(</span><span class="n">_</span> <span class="nv">subviews</span><span class="p">:</span> <span class="p">[</span><span class="kt">UIView</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>subviews</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>an array of views to add as subviews</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo11UIStackViewCRbzlE23replaceArrangedSubviews4withySo6UIViewCd_tF"></a>
+                    <a name="//apple_ref/swift/Method/replaceArrangedSubviews(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo11UIStackViewCRbzlE23replaceArrangedSubviews4withySo6UIViewCd_tF">replaceArrangedSubviews(with:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Replaces the stack view&rsquo;s existing subviews, if any, with the supplied list of new subviews.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">replaceArrangedSubviews</span><span class="p">(</span><span class="n">with</span> <span class="nv">subviews</span><span class="p">:</span> <span class="kt">UIView</span><span class="o">...</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>subviews</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>variadic views to add as subviews</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo11UIStackViewCRbzlE23replaceArrangedSubviews4withySaySo6UIViewCG_tF"></a>
+                    <a name="//apple_ref/swift/Method/replaceArrangedSubviews(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo11UIStackViewCRbzlE23replaceArrangedSubviews4withySaySo6UIViewCG_tF">replaceArrangedSubviews(with:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Replaces the stack view&rsquo;s existing subviews, if any, with the supplied list of new subviews.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">replaceArrangedSubviews</span><span class="p">(</span><span class="n">with</span> <span class="nv">subviews</span><span class="p">:</span> <span class="p">[</span><span class="kt">UIView</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>subviews</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>an array of views to add as subviews</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo11UITableViewCRbzlE17addRefreshControlSo09UIRefreshG0CyF"></a>
+                    <a name="//apple_ref/swift/Method/addRefreshControl()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo11UITableViewCRbzlE17addRefreshControlSo09UIRefreshG0CyF">addRefreshControl()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code>UIRefreshControl</code> and adds it to the <code>UITableView</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">addRefreshControl</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">UIRefreshControl</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>the created refresh control.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo11UITableViewCRbzlE6update_10completionyyycSg_ySbcSgtF"></a>
+                    <a name="//apple_ref/swift/Method/update(_:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo11UITableViewCRbzlE6update_10completionyyycSg_ySbcSgtF">update(_:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Begins a series of method calls that insert, delete, or select rows and sections of the table view.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">update</span><span class="p">(</span><span class="n">_</span> <span class="nv">batchUpdates</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="p">())?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>batchUpdates</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure that performs the relevant insert, delete, reload, or move operations</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A completion handler block to execute when all of the operations are finished.
+This block has no return value and takes a Boolean parameter indicating whether the animations
+completed successfully. The value of this parameter is false if the animations were
+interrupted for any reason.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo11UITableViewCRbzlE7lastRow9inSectionSiSgSi_tF"></a>
+                    <a name="//apple_ref/swift/Method/lastRow(inSection:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo11UITableViewCRbzlE7lastRow9inSectionSiSgSi_tF">lastRow(inSection:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the last numerical row in the table view&rsquo;s section or nil if no rows exist in that section.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">lastRow</span><span class="p">(</span><span class="n">inSection</span> <span class="nv">section</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>section</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the numerical section in the table view.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>the last numerical row in the table view&rsquo;s section or nil</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo6UIViewCRbzlE25composeAccessibilityLabel4fromySaySSG_tF"></a>
+                    <a name="//apple_ref/swift/Method/composeAccessibilityLabel(from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo6UIViewCRbzlE25composeAccessibilityLabel4fromySaySSG_tF">composeAccessibilityLabel(from:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the accessibility label of this element as a composed body of labels.
+You may use this method for views which could provide composite information
+to accessibility users, such as <code>UITableViewCell</code>s.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">composeAccessibilityLabel</span><span class="p">(</span><span class="n">from</span> <span class="nv">labels</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>labels</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the list of labels from which the composite accessibility label is built.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo6UIViewCRbzlE14boundingAnchorAA014BoundingLayoutE0Vvp"></a>
+                    <a name="//apple_ref/swift/Property/boundingAnchor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo6UIViewCRbzlE14boundingAnchorAA014BoundingLayoutE0Vvp">boundingAnchor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a layout anchor representing the entire bounds of a view.</p>
+
+<p>Use this anchor to create multiple homomorphous constraints between a view and its target. The
+the result of these operations create contexts for easily applying symmetric changes across the
+emitted constraints.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">boundingAnchor</span><span class="p">:</span> <span class="kt"><a href="../Structs/BoundingLayoutAnchor.html">BoundingLayoutAnchor</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo6UIViewCRbzlE13layoutMarginsAA10EdgeInsetsVyAA6BoundsOGvp"></a>
+                    <a name="//apple_ref/swift/Property/layoutMargins" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo6UIViewCRbzlE13layoutMarginsAA10EdgeInsetsVyAA6BoundsOGvp">layoutMargins</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets or sets the layout margins of the view using an availability-agnostic interface.</p>
+
+<p>On iOS 11 and above, this gets or sets the <code>directionalLayoutMargins</code> of the view; on older
+versions, this gets or sets the <code>layoutMargins</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">layoutMargins</span><span class="p">:</span> <span class="kt"><a href="../Structs/EdgeInsets.html">EdgeInsets</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums.html#/s:5Gooey6BoundsO">Bounds</a></span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo16UIViewControllerCRbzlE9topAnchorSo013NSLayoutYAxisF0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/topAnchor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo16UIViewControllerCRbzlE9topAnchorSo013NSLayoutYAxisF0Cvp">topAnchor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the top layout anchor for the view controller&rsquo;s view.</p>
+
+<p>On iOS 11 and above, this returns the <code>safeAreaLayoutGuide</code>&lsquo;s top anchor; on older versions,
+this returns the <code>topLayoutGuide</code>&rsquo;s bottom anchor.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">topAnchor</span><span class="p">:</span> <span class="kt">NSLayoutYAxisAnchor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo16UIViewControllerCRbzlE12bottomAnchorSo013NSLayoutYAxisF0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/bottomAnchor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo16UIViewControllerCRbzlE12bottomAnchorSo013NSLayoutYAxisF0Cvp">bottomAnchor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the bottom layout anchor for the view controller&rsquo;s view.</p>
+
+<p>On iOS 11 and above, this returns the <code>safeAreaLayoutGuide</code>&lsquo;s bottom anchor; on older versions,
+this returns the <code>bottomLayoutGuide</code>&rsquo;s top anchor.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">bottomAnchor</span><span class="p">:</span> <span class="kt">NSLayoutYAxisAnchor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo16UIViewControllerCRbzlE17bottomBleedAnchorSo013NSLayoutYAxisG0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/bottomBleedAnchor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo16UIViewControllerCRbzlE17bottomBleedAnchorSo013NSLayoutYAxisG0Cvp">bottomBleedAnchor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the bottom-most anchor for visible content.</p>
+
+<p>On the iPhone X, this anchor falls behind the virtual home button for view controllers with
+bounds equal the window&rsquo;s bounds.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">bottomBleedAnchor</span><span class="p">:</span> <span class="kt">NSLayoutYAxisAnchor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo16UIViewControllerCRbzlE10leftAnchorSo013NSLayoutXAxisF0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/leftAnchor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo16UIViewControllerCRbzlE10leftAnchorSo013NSLayoutXAxisF0Cvp">leftAnchor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the left layout anchor for the view controller&rsquo;s view.</p>
+
+<p>On iOS 11 and above, this returns the <code>safeAreaLayoutGuide</code>&lsquo;s left anchor; on older versions,
+this returns the view&rsquo;s left anchor.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">leftAnchor</span><span class="p">:</span> <span class="kt">NSLayoutXAxisAnchor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo16UIViewControllerCRbzlE11rightAnchorSo013NSLayoutXAxisF0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/rightAnchor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo16UIViewControllerCRbzlE11rightAnchorSo013NSLayoutXAxisF0Cvp">rightAnchor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the right layout anchor for the view controller&rsquo;s view.</p>
+
+<p>On iOS 11 and above, this returns the <code>safeAreaLayoutGuide</code>&lsquo;s right anchor; on older versions,
+this returns the view&rsquo;s right anchor.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">rightAnchor</span><span class="p">:</span> <span class="kt">NSLayoutXAxisAnchor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo16UIViewControllerCRbzlE13leadingAnchorSo013NSLayoutXAxisF0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/leadingAnchor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo16UIViewControllerCRbzlE13leadingAnchorSo013NSLayoutXAxisF0Cvp">leadingAnchor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the leading layout anchor for the view controller&rsquo;s view.</p>
+
+<p>On iOS 11 and above, this returns the <code>safeAreaLayoutGuide</code>&lsquo;s left anchor; on older versions,
+this returns the view&rsquo;s left anchor.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">leadingAnchor</span><span class="p">:</span> <span class="kt">NSLayoutXAxisAnchor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo16UIViewControllerCRbzlE14trailingAnchorSo013NSLayoutXAxisF0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/trailingAnchor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo16UIViewControllerCRbzlE14trailingAnchorSo013NSLayoutXAxisF0Cvp">trailingAnchor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the right layout anchor for the view controller&rsquo;s view.</p>
+
+<p>On iOS 11 and above, this returns the <code>safeAreaLayoutGuide</code>&lsquo;s right anchor; on older versions,
+this returns the view&rsquo;s right anchor.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">trailingAnchor</span><span class="p">:</span> <span class="kt">NSLayoutXAxisAnchor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo16UIViewControllerCRbzlE8safeAreaSo13UILayoutGuideCvp"></a>
+                    <a name="//apple_ref/swift/Property/safeArea" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo16UIViewControllerCRbzlE8safeAreaSo13UILayoutGuideCvp">safeArea</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the safe-area layout guide for the target view controller.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">safeArea</span><span class="p">:</span> <span class="kt">UILayoutGuide</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo16UIViewControllerCRbzlE9bleedAreaSo13UILayoutGuideCvp"></a>
+                    <a name="//apple_ref/swift/Property/bleedArea" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo16UIViewControllerCRbzlE9bleedAreaSo13UILayoutGuideCvp">bleedArea</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the safe-area layout guide for the target view controller including its bleed anchor.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">bleedArea</span><span class="p">:</span> <span class="kt">UILayoutGuide</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey0A9NamespaceVAASo16UIViewControllerCRbzlE013installSearchD0_5usingSo11UISearchBarCSo0hD0C_So11UITableViewCtF"></a>
+                    <a name="//apple_ref/swift/Method/installSearchController(_:using:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey0A9NamespaceVAASo16UIViewControllerCRbzlE013installSearchD0_5usingSo11UISearchBarCSo0hD0C_So11UITableViewCtF">installSearchController(_:using:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Installs into the calling view controller the search bar of a <code>UISearchController</code>.</p>
+
+<p>On iOS 11 and above, the search bar is added to the navigation item. On iOS 10 and below,
+it is added as the fallback table view&rsquo;s header view.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">installSearchController</span><span class="p">(</span><span class="n">_</span> <span class="nv">controller</span><span class="p">:</span> <span class="kt">UISearchController</span><span class="p">,</span> <span class="n">using</span> <span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UISearchBar</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>controller</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the target search controller to install.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the table view to receive the search bar</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>the search bar belonging to the search controller for convenience. You can, of
+course, access this via the search controller&rsquo;s property.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="https://github.com/DuetHealth/Gooey.git" target="_blank" rel="external">Duet Health</a>. All rights reserved. (Last updated: 2019-09-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

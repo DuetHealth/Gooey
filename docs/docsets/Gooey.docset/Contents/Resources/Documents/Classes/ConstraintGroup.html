@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ConstraintGroup Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/ConstraintGroup" class="dashAnchor"></a>
+    <a title="ConstraintGroup Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Gooey Docs</a> (78% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Gooey Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        ConstraintGroup Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ConstraintGroup.html">ConstraintGroup</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SafeAreaLayoutGuide.html">SafeAreaLayoutGuide</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:5Gooey6BoundsO">Bounds</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:5Gooey14HorizontalAxisO">HorizontalAxis</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:5Gooey12VerticalAxisO">VerticalAxis</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/NSLayoutConstraint.html">NSLayoutConstraint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIEdgeInsets.html">UIEdgeInsets</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/BoundingLayoutAnchorTarget.html">BoundingLayoutAnchorTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ConstraintRepresentable.html">ConstraintRepresentable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/GooeyCompatible.html">GooeyCompatible</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:5Gooey10LayoutAxisP">LayoutAxis</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/BoundingLayoutAnchor.html">BoundingLayoutAnchor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ColorToken.html">ColorToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ColorToken/AlphaLocation.html">– AlphaLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EdgeInsets.html">EdgeInsets</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GooeyNamespace.html">GooeyNamespace</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:5Gooey5Colora">Color</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>ConstraintGroup</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ConstraintGroup</span><span class="o">&lt;</span><span class="kt">A</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ConstraintRepresentable.html">ConstraintRepresentable</a></span> <span class="k">where</span> <span class="kt">A</span> <span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:5Gooey10LayoutAxisP">LayoutAxis</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>The <code>ConstraintGroup</code> type is a factory decorator for applying symmetric changes to grouped
+<code>NSLayoutConstraint</code> objects using a fluent interface.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey23ConstraintRepresentableP11constraintsSaySo08NSLayoutB0CGvp"></a>
+                    <a name="//apple_ref/swift/Property/constraints" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey23ConstraintRepresentableP11constraintsSaySo08NSLayoutB0CGvp">constraints</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">constraints</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSLayoutConstraint</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey15ConstraintGroupC8activateyyF"></a>
+                    <a name="//apple_ref/swift/Method/activate()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey15ConstraintGroupC8activateyyF">activate()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Activates all constraints in the group.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">activate</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey15ConstraintGroupC10deactivateyyF"></a>
+                    <a name="//apple_ref/swift/Method/deactivate()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey15ConstraintGroupC10deactivateyyF">deactivate()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Deactivates all constraints in the group.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deactivate</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey15ConstraintGroupC5inset2byyAA10EdgeInsetsVyxG_tF"></a>
+                    <a name="//apple_ref/swift/Method/inset(by:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey15ConstraintGroupC5inset2byyAA10EdgeInsetsVyxG_tF">inset(by:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Transforms the constraint group by increasing the driving constants
+by the given values in the direction of the center of the target view.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">inset</span><span class="p">(</span><span class="n">by</span> <span class="nv">insets</span><span class="p">:</span> <span class="kt"><a href="../Structs/EdgeInsets.html">EdgeInsets</a></span><span class="o">&lt;</span><span class="kt">A</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey15ConstraintGroupC6outset2byyAA10EdgeInsetsVyxG_tF"></a>
+                    <a name="//apple_ref/swift/Method/outset(by:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey15ConstraintGroupC6outset2byyAA10EdgeInsetsVyxG_tF">outset(by:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Transforms the constraint group by increasing the driving constants
+by the given values in the direction of the center of the target view.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">outset</span><span class="p">(</span><span class="n">by</span> <span class="nv">insets</span><span class="p">:</span> <span class="kt"><a href="../Structs/EdgeInsets.html">EdgeInsets</a></span><span class="o">&lt;</span><span class="kt">A</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey15ConstraintGroupC7replace4withyAA10EdgeInsetsVyxG_tF"></a>
+                    <a name="//apple_ref/swift/Method/replace(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey15ConstraintGroupC7replace4withyAA10EdgeInsetsVyxG_tF">replace(with:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Transforms the constraint group by replacing the driving constants
+with the given inset values. Any zero or unsupplied values remove
+the applicable constant.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">replace</span><span class="p">(</span><span class="n">with</span> <span class="nv">insets</span><span class="p">:</span> <span class="kt"><a href="../Structs/EdgeInsets.html">EdgeInsets</a></span><span class="o">&lt;</span><span class="kt">A</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Gooey15ConstraintGroupC5patch4withyAA10EdgeInsetsVyxG_tF"></a>
+                    <a name="//apple_ref/swift/Method/patch(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Gooey15ConstraintGroupC5patch4withyAA10EdgeInsetsVyxG_tF">patch(with:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Transforms the constraint group by patching the driving constants
+with the given inset values. Any zero or unsupplied values denote
+no change to the applicable constant.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">patch</span><span class="p">(</span><span class="n">with</span> <span class="nv">insets</span><span class="p">:</span> <span class="kt"><a href="../Structs/EdgeInsets.html">EdgeInsets</a></span><span class="o">&lt;</span><span class="kt">A</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="https://github.com/DuetHealth/Gooey.git" target="_blank" rel="external">Duet Health</a>. All rights reserved. (Last updated: 2019-09-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
