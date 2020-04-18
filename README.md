@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.org/DuetHealth/Gooey.svg?branch=master)](https://travis-ci.org/DuetHealth/Gooey)	
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Swift Package Manager](https://github.com/DuetHealth/Gooey/workflows/Swift%20Package%20Manager/badge.svg)](https://github.com/DuetHealth/Gooey/actions?query=workflow%3A%22Swift+Package+Manager%22) [![Carthage](https://github.com/DuetHealth/Gooey/workflows/Carthage/badge.svg)](https://github.com/DuetHealth/Gooey/actions?query=workflow%3ACarthage) [![Cocoapods](https://github.com/DuetHealth/Gooey/workflows/Cocoapods/badge.svg)](https://github.com/DuetHealth/Gooey/actions?query=workflow%3ACocoapods)
+
 
 # Gooey	
 
