@@ -103,6 +103,10 @@ public extension EdgeInsets where A == Bounds {
         return self.init(uiInsets: UIEdgeInsets(top: top, left: left, bottom: bottom, right: right))
     }
 
+    static func byAxis(horizontal: EdgeInsets<HorizontalAxis>, vertical: EdgeInsets<VerticalAxis>) -> EdgeInsets<Bounds> {
+        return self.init(uiInsets: UIEdgeInsets(top: vertical.top, left: horizontal.left, bottom: vertical.bottom, right: horizontal.right))
+    }
+
     var left: CGFloat {
         return uiInsets.left
     }

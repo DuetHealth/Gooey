@@ -2,6 +2,7 @@ import Foundation
 @testable import Gooey
 import Nimble
 import Quick
+import UIKit
 
 extension Bool: Comparable {
 
