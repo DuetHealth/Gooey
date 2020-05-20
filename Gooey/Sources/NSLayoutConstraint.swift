@@ -11,7 +11,7 @@ import UIKit
 
 public extension GooeyNamespace where Base: NSLayoutConstraint {
 
-    func with(priority: UILayoutPriority) -> NSLayoutConstraint {
+    @discardableResult func with(priority: UILayoutPriority) -> NSLayoutConstraint {
         base.priority = priority
         return base
     }

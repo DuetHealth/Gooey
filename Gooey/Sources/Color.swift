@@ -57,7 +57,7 @@ public struct ColorToken {
     /// Returns the hue of this color (of degrees out of 360°) represented as a percent in 0...1.
     public var hue: CGFloat {
         switch createdState {
-        case .hue(let hue, _, _, _):
+        case .hsv(let hue, _, _, _):
             return hue
         default:
             if max(red, green, blue) == min(red, green, blue) { return 0 }
@@ -77,7 +77,7 @@ public struct ColorToken {
     /// Returns the saturation of this color represented as a percent in 0...1.
     public var saturation: CGFloat {
         switch createdState {
-        case .hue(_, let saturation, _, _):
+        case .hsv(_, let saturation, _, _):
             return saturation
         default:
             return max(red, green, blue) == 0 ? 0 : (value - min(percentRed, percentGreen, percentBlue)) / value
@@ -87,7 +87,7 @@ public struct ColorToken {
     /// Returns the value of this color represented as a percent in 0...1.
     public var value: CGFloat {
         switch createdState {
-        case .hue(_, _, let value, _):
+        case .hsv(_, _, let value, _):
             return value
         default:
             return max(percentRed, percentGreen, percentBlue)
@@ -112,7 +112,7 @@ public struct ColorToken {
 
     /// Returns the `UIColor` which corresponds with this color.
     public var uiColor: UIColor {
-        switch createdState{
+        switch createdState {
         case .uiColor(let color):
             return color
         default:
@@ -324,6 +324,6 @@ private enum CreatedState {
     case rgba(red: UInt8, green: UInt8, blue: UInt8, alpha: UInt8)
     case percents(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)
     case uiColor(UIColor)
-    case hue(CGFloat, saturation: CGFloat, value: CGFloat, alpha: CGFloat)
+    case hsv(CGFloat, saturation: CGFloat, value: CGFloat, alpha: CGFloat)
 
 }

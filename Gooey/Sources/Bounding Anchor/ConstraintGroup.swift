@@ -67,7 +67,7 @@ public class ConstraintGroup<A: LayoutAxis>: ConstraintRepresentable {
         )
     }
 
-    public func with(priority: UILayoutPriority) -> ConstraintGroup<A> {
+    @discardableResult public func with(priority: UILayoutPriority) -> ConstraintGroup<A> {
         for constraint in constraints {
             constraint.priority = priority
         }
