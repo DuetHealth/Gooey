@@ -1,9 +1,9 @@
 import Foundation
 import UIKit
 
-extension UIView: BoundingLayoutAnchorTarget { }
+@MainActor extension UIView: BoundingLayoutAnchorTarget { }
 
-public extension GooeyNamespace where Base: UIView {
+@MainActor public extension GooeyNamespace where Base: UIView {
 
     /// Returns a layout anchor representing the entire bounds of a view.
     ///

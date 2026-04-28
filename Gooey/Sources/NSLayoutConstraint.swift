@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public extension GooeyNamespace where Base: NSLayoutConstraint {
+@MainActor public extension GooeyNamespace where Base: NSLayoutConstraint {
 
     @discardableResult func with(priority: UILayoutPriority) -> NSLayoutConstraint {
         base.priority = priority

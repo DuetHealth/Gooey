@@ -24,3 +24,6 @@ report.xml
 fastlane/test_output
 fastlane/README.md
 Carthage/Checkouts
+
+# Swift Package Manager
+.build/

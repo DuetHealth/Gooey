@@ -1,10 +1,10 @@
-// swift-tools-version:5.1
+// swift-tools-version: 6.2
 import PackageDescription
 
 let package = Package(
     name: "Gooey",
     platforms: [
-        .iOS(.v11)
+        .iOS(.v13)
     ],
     products: [
         .library(
@@ -16,6 +16,11 @@ let package = Package(
         .target(
             name: "Gooey",
             dependencies: [],
-            path: "Gooey"),
+            path: "Gooey/Sources"),
+        .testTarget(
+            name: "GooeyTests",
+            dependencies: ["Gooey"],
+            path: "GooeyTests",
+            exclude: ["Info.plist"]),
     ]
 )

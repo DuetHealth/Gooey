@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-public extension GooeyNamespace where Base == UIBarButtonItem.Type {
+@MainActor public extension GooeyNamespace where Base == UIBarButtonItem.Type {
 
     /// The system action button.
     var action: UIBarButtonItem {

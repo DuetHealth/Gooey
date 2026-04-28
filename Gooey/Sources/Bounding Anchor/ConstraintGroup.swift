@@ -3,7 +3,7 @@ import UIKit
 
 /// The `ConstraintGroup` type is a factory decorator for applying symmetric changes to grouped
 /// `NSLayoutConstraint` objects using a fluent interface.
-public class ConstraintGroup<A: LayoutAxis>: ConstraintRepresentable {
+@MainActor public class ConstraintGroup<A: LayoutAxis>: ConstraintRepresentable {
 
     public let constraints: [NSLayoutConstraint]
     private var insets: UIEdgeInsets {
@@ -17,7 +17,7 @@ public class ConstraintGroup<A: LayoutAxis>: ConstraintRepresentable {
         }
     }
 
-    init<A>(constraints: [NSLayoutConstraint], insets: EdgeInsets<A>) {
+    init<Axis: LayoutAxis>(constraints: [NSLayoutConstraint], insets: EdgeInsets<Axis>) {
         self.constraints = constraints
         self.insets = insets.uiInsets
     }
