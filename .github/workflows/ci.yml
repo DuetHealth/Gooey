@@ -2,19 +2,21 @@ name: CI
 
 on:
   push:
-    branches: [main, master]
+    branches: [main]
   pull_request:
-    branches: [main, master]
+    branches: [main]
 
 jobs:
-  build-and-test:
+  build:
     runs-on: macos-15
     steps:
       - uses: actions/checkout@v4
 
-      - name: Build and Test
-        run: >
-          xcodebuild test
-          -scheme Gooey
-          -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest'
-          -quiet
+      - name: Select Xcode 16.3
+        run: sudo xcode-select -s /Applications/Xcode_16.3.app/Contents/Developer
+
+      - name: Build
+        run: swift build --sdk "$(xcrun --sdk iphonesimulator --show-sdk-path)" --triple arm64-apple-ios13.0-simulator
+
+      - name: Test
+        run: xcodebuild test -scheme Gooey -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' -quiet
