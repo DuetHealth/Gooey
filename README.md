@@ -13,7 +13,7 @@ Swift Package Manager: `.package(url: "https://github.com/DuetHealth/Gooey.git",
 
 ### Running tests    
 
-Run `swift test` or open the project in Xcode and press `⌘ + U` to execute the test action.
+Open the project in Xcode and press `⌘ + U` to execute the test action, or run `xcodebuild test -scheme Gooey -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest'`.
 
 ## License    
 
