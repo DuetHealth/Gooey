@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-extension GooeyNamespace where Base: UIStackView {
+@MainActor extension GooeyNamespace where Base: UIStackView {
 
     /// Adds multiple arranged subviews in the order in which they are supplied.
     ///

@@ -6,7 +6,7 @@ import UIKit
     return "\(bundle).\(String(describing: type))"
 }
 
-public extension GooeyNamespace where Base: UITableView {
+@MainActor public extension GooeyNamespace where Base: UITableView {
 
     /// Registers a number of classes for use in creating new table cells.
     ///
@@ -84,7 +84,7 @@ public extension GooeyNamespace where Base: UITableView {
 
 }
 
-public extension GooeyNamespace where Base: UICollectionView {
+@MainActor public extension GooeyNamespace where Base: UICollectionView {
 
     /// Registers a number of classes for use in creating new collection cells.
     ///

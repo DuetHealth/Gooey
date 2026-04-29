@@ -1,6 +1,6 @@
 import UIKit
 
-extension NSLayoutConstraint {
+@MainActor extension NSLayoutConstraint {
 
     var targetsLeading: Bool {
         return firstAttribute == .left || firstAttribute == .leading ||

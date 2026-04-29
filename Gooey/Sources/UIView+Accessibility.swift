@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-public extension GooeyNamespace where Base: UIView {
+@MainActor public extension GooeyNamespace where Base: UIView {
 
     /// Sets the accessibility label of this element as a composed body of labels.
     /// You may use this method for views which could provide composite information

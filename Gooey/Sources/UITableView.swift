@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-public extension GooeyNamespace where Base: UITableView {
+@MainActor public extension GooeyNamespace where Base: UITableView {
 
     /// Creates a `UIRefreshControl` and adds it to the `UITableView`.
     ///

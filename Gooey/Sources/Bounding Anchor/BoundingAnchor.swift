@@ -15,7 +15,7 @@ public enum Bounds: LayoutAxis { }
 
 /// Classes which conform to the `BoundingLayoutAnchorTarget` protocol provide an interface
 /// for accessing the edge anchors which drive the layout of the target.
-public protocol BoundingLayoutAnchorTarget {
+@MainActor public protocol BoundingLayoutAnchorTarget {
     var topAnchor: NSLayoutYAxisAnchor { get }
     var leftAnchor: NSLayoutXAxisAnchor { get }
     var bottomAnchor: NSLayoutYAxisAnchor { get }
@@ -27,7 +27,7 @@ public protocol BoundingLayoutAnchorTarget {
 /// The `BoundingLayoutAnchor` type is a factory decorator for creating grouped `NSLayoutConstraint`
 /// objects using a fluent interface (an interface designed to produce more readable code). Use
 /// these constraints to programatically define your layout using Auto Layout.
-public struct BoundingLayoutAnchor {
+@MainActor public struct BoundingLayoutAnchor {
 
     private let target: BoundingLayoutAnchorTarget
 

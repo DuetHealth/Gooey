@@ -9,7 +9,7 @@ public protocol ConstraintRepresentable {
 
 }
 
-public extension GooeyNamespace where Base == NSLayoutConstraint.Type {
+@MainActor public extension GooeyNamespace where Base == NSLayoutConstraint.Type {
 
     /// The effect of this method is the same as setting the
     ///     [isActive](apple-reference-documentation://hsRIb14KxL) property of
@@ -55,7 +55,7 @@ public extension GooeyNamespace where Base == NSLayoutConstraint.Type {
 
 extension NSLayoutConstraint: ConstraintRepresentable {
 
-    public var constraints: [NSLayoutConstraint] {
+    nonisolated public var constraints: [NSLayoutConstraint] {
         return [self]
     }
 

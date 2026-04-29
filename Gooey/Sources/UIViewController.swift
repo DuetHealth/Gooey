@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-public extension GooeyNamespace where Base: UIViewController {
+@MainActor public extension GooeyNamespace where Base: UIViewController {
 
     /// Returns the top layout anchor for the view controller's view.
     ///

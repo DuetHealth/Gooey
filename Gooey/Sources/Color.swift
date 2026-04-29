@@ -9,7 +9,7 @@ public typealias Color = ColorToken
 ///
 /// You should prefer using this type only by its exported typealias: `ColorToken` when targeting
 /// iOS 13 with SwiftUI or `Color` when targeting iOS 12.
-public struct ColorToken {
+public struct ColorToken: Sendable {
 
     /// The location of the alpha component in representations of this value.
     public enum AlphaLocation {
@@ -285,7 +285,7 @@ private extension UInt8 {
 
 }
 
-private struct Progeny {
+private struct Progeny: Sendable {
 
     let createdState: CreatedState
     let red: UInt8
@@ -356,7 +356,7 @@ private struct Progeny {
 
 }
 
-private enum CreatedState {
+private enum CreatedState: Sendable {
 
     case rgba(red: UInt8, green: UInt8, blue: UInt8, alpha: UInt8)
     case percents(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)

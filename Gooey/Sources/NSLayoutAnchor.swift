@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 
 @available(iOS 11.0, *)
-public extension GooeyNamespace where Base: NSLayoutXAxisAnchor {
+@MainActor public extension GooeyNamespace where Base: NSLayoutXAxisAnchor {
     
     /// Returns a constraint which defines that the current anchor trails the specified anchor by the system spacing value.
     func constraintEqualToSystemSpacingAfter(_ anchor: NSLayoutXAxisAnchor) -> NSLayoutConstraint {
@@ -29,7 +29,7 @@ public extension GooeyNamespace where Base: NSLayoutXAxisAnchor {
 }
 
 @available(iOS 11.0, *)
-public extension GooeyNamespace where Base: NSLayoutYAxisAnchor {
+@MainActor public extension GooeyNamespace where Base: NSLayoutYAxisAnchor {
     
     /// Returns a constraint which defines that the current anchor is positioned below the specified anchor by the system spacing value.
     func constraintEqualToSystemSpacingBelow(_ anchor: NSLayoutYAxisAnchor) -> NSLayoutConstraint {
